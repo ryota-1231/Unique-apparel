@@ -185,4 +185,6 @@ psd
 thumb
 sketch
 
+.DS_Store
+
 # End of https://www.gitignore.io/api/node,rails,reactnode_modules/
