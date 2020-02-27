@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
-.app-main{
-  margin-top: 120px;
+.contents {
+  text-align: center;
+}
+
+.contents h1 {
+  margin-top: 64px;
+}
+
+.form-sentence {
+  margin-bottom: 32px;
 }
