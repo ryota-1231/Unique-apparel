@@ -1,5 +1,5 @@
 {
-  "name": "crud_front",
+  "name": "React_sample",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "bootstrap": "^3.4.1",
+    "bower": "^1.8.8",
     "react": "^16.12.0",
     "react-addons-update": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
   }
 }
