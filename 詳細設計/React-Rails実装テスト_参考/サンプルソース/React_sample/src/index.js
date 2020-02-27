@@ -12,7 +12,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
 
 
-// 砂土居実装コード
+
+// 砂土居実装コード(購入画面実装)
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import Button from '@material-ui/core/Button';
