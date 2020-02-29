@@ -1,32 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from '@material-ui/core/Button';
-import PropTypes from 'prop-types'
 import './index.css'
-import HorizontalLabelPositionBelowStepper from './stepbar';
-import Link from '@material-ui/core/Link';
-
-
-class OrderComplete extends Component {
-  render () {
-    return (
-      <div className="contents">
-        <HorizontalLabelPositionBelowStepper />
-        <h1>ご注文ありがとうございました！</h1>
-        <h2>ご注文番号: xxxxxxxxxxxxxx</h2>
-        <p>こちらのメールアドレスxxx@xxx.xxxにメールを送りました</p>
-        <p className="form-sentence">メールが届かない場合は、<a href="#">お客様お問い合わせ</a>よりご連絡ください</p>
-
-        <Link href="#" ><Button variant="contained" className="ordercomplete-button">注文履歴へ</Button></Link>
-        <Link href="#" ><Button variant="contained" className="ordercomplete-button">トップへ</Button></Link>
-      </div>
-    )
-  }
-}
-
-OrderComplete.propTypes = {
-  add: PropTypes.func.isRequirednpm
-}
+import OrderComplete from './Orders/complete/main'
 
 ReactDOM.render(
   <OrderComplete />,
