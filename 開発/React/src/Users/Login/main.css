@@ -4,6 +4,7 @@
 
 .contents {
   width: 900px;
+  height: 630px;
   margin: 0 auto;
   display: flex;
 }
@@ -89,6 +90,10 @@
   width: 50%;
   background-color: rgb(255, 155, 230);
   text-align: center;
+}
+
+#image-title{
+  font-size: 30px;
 }
 
 .signup-title{
