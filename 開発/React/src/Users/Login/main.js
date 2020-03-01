@@ -17,14 +17,8 @@ class UsersLogin extends React.Component {
             {/* -------------テキストボックス-------------*/}
             <TextFieldContainer />
             {/* -------------チェックボックス・ラベル-------------*/}
-            <div className='check-area'>
-              <CheckBoxContainer />
-              <Button variant='contained' id='users-signin-button' color="secondary" href='#'>Sing In!</Button>
-            </div>
-              <Link href='#' className='forget-password'>Forget PassWord?</Link>
-          </div>
-          <div className='sign-in-border-area'>
-            <p className='sign-in-border-desc'><span>or</span></p>
+            <CheckBoxContainer />
+            <Link href='#' className='forget-password'>Forget PassWord?</Link>
           </div>
            {/* -------------外部連携ボタン-------------*/}
           <InterFaceContainer />

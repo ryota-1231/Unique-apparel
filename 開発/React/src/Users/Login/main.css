@@ -15,6 +15,10 @@
   border: 1px solid #ddd;
 }
 
+.sign-in-top-area{
+  padding: 20px 30px 20px;
+}
+
 .sign-in-title{
   text-align: center;
   font-size: 30px;
@@ -45,27 +49,39 @@
   text-align: center;
 }
 
-/* -------------外部連携ボタン-------------*/
-
-#google-btn{
-  display: block;
-  width: 350px;
-  margin: 0 auto;
-}
-
-#google-btn{
-  display: block;
-  width: 350px;
-  margin: 0 auto;
-}
-
-#google-btn{
-  display: block;
-  width: 350px;
-  margin: 0 auto;
-}
-
 /*------------------ bottom-area -----------------*/
+/* -------------外部連携ボタン-------------*/
+.sign-in-bottom-area{
+  padding: 20px 50px 50px;
+  border-top: 0.5px solid #ddd;
+  position: relative;
+}
+
+.sign-in-bottom-area h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+#google-btn{
+  text-align: center;
+  display: block;
+  width: 350px;
+  margin: 0 auto 10px;
+}
+
+#instagram-btn{
+  text-align: center;
+  display: block;
+  width: 350px;
+  margin: 0 auto 10px;
+}
+
+#twitter-btn{
+  text-align: center;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
 
 
 /*------------------ content-right ------------------*/
