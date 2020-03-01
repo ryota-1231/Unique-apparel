@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+
+.contents {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/*------------------ content-left -----------------*/
+/*------------------ top-area -----------------*/
+.content-left{
+  width: 50%;
+  border: 1px solid #ddd;
+}
+
+.sign-in-title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.form-area{
+  width: 350px;
+  margin: 0 auto;
+}
+
+#standard-basic{
+  display: block;
+  width: 350px;
+}
+
+.check-area{
+  width: 250px;
+  margin: 0 auto 30px;
+  justify-content: space-between;
+}
+
+.check-area input{
+  margin: 3px 7px 3px 0;
+}
+
+.forget-password{
+  text-align: center;
+}
+
+/*------------------ bottom-area -----------------*/
+
+
+/*------------------ content-right ------------------*/
+.content-right{
+  width: 50%;
+  background-color: rgb(255, 155, 230);
+  text-align: center;
+}
+
+.signup-title{
+  color: #fff;
+  font-size: 30px;
+}
+
+.contents h1 {
+  margin-top: 64px;
+}
+
+.form-sentence {
+  margin-bottom: 32px;
+}
+
+
+
+.forget-password{
+  display: block;
+}
