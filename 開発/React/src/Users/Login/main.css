@@ -20,6 +20,7 @@
   font-size: 30px;
 }
 
+/* -------------テキストボックス-------------*/
 .form-area{
   width: 350px;
   margin: 0 auto;
@@ -30,18 +31,38 @@
   width: 350px;
 }
 
+/* -------------チェックボックス・ラベル-------------*/
 .check-area{
-  width: 250px;
-  margin: 0 auto 30px;
-  justify-content: space-between;
+  width: 350px;
+  margin: 30px auto;
 }
 
-.check-area input{
-  margin: 3px 7px 3px 0;
+#users-signin-button{
+  margin-left: 90px;
 }
 
 .forget-password{
   text-align: center;
+}
+
+/* -------------外部連携ボタン-------------*/
+
+#google-btn{
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+
+#google-btn{
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+
+#google-btn{
+  display: block;
+  width: 350px;
+  margin: 0 auto;
 }
 
 /*------------------ bottom-area -----------------*/
