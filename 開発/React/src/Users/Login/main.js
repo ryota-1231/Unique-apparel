@@ -3,8 +3,7 @@ import Button from '@material-ui/core/Button'
 import PropTypes from 'prop-types'
 import './main.css'
 import Link from '@material-ui/core/Link'
-import TextFieldContainer from './TextFieldContainer'
-import CheckBoxContainer from './CheckBoxContainer'
+import SignInContainer from './SignInContainer'
 import InterFaceContainer from './InterFaceContainer'
 
 class UsersLogin extends React.Component {
@@ -12,14 +11,8 @@ class UsersLogin extends React.Component {
     return (
       <div className='contents'>
         <div className='content-left'>
-          <div className='sign-in-top-area'>
-            <h2 className='sign-in-title'>Sign In To ...</h2>
-            {/* -------------テキストボックス-------------*/}
-            <TextFieldContainer />
-            {/* -------------チェックボックス・ラベル-------------*/}
-            <CheckBoxContainer />
-            <Link href='#' className='forget-password'>Forget PassWord?</Link>
-          </div>
+          {/* -------------サインインエリア-------------*/}
+          <SignInContainer />
            {/* -------------外部連携ボタン-------------*/}
           <InterFaceContainer />
         </div>
