@@ -88,7 +88,6 @@
   margin: 0 auto;
 }
 
-
 /*------------------ content-right ------------------*/
 .content-right{
   width: 50%;
@@ -113,14 +112,11 @@
   margin-bottom: 32px;
 }
 
-
-
 .forget-password{
   display: block;
 }
 
 /*------------------ company-page-link ------------------*/
-
 .company-page-link{
   display: inline-block;
   margin-top: 20px !important;

@@ -1,6 +1,6 @@
 import React from 'react'
-import './main.css'
 import TextField from '@material-ui/core/TextField'
+import './main.css'
 
 class TextFieldContainer extends React.Component {
   render () {

@@ -1,6 +1,6 @@
 import React from 'react'
-import './main.css'
 import Link from '@material-ui/core/Link'
+import './main.css'
 import TextFieldContainer from './TextFieldContainer'
 import CheckBoxContainer from './CheckBoxContainer'
 
