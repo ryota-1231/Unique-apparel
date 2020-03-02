@@ -3,8 +3,8 @@ import React from 'react'
 import Link from '@material-ui/core/Link'
 import './main.css'
 import SignInContainer from './SignInContainer'
-//import InterFaceContainer from './InterFaceContainer'
-import SignUpContainer from './SignUpContainer'
+// import InterFaceContainer from './InterFaceContainer'
+// import SignUpContainer from './SignUpContainer'
 
 class CompanyLogin extends React.Component {
   render () {
@@ -15,12 +15,9 @@ class CompanyLogin extends React.Component {
             {/* -------------サインインエリア------------- */}
             <SignInContainer />
           </div>
-          <div className='content-right'>
-            {/* -------------サインアップエリア------------- */}
-            <SignUpContainer />
-          </div>
+
         </div>
-        <Link href='#' className='company-page-link'>Are you a User?</Link>
+        <Link href='#' className='user-page-link'>Are you a User?</Link>
       </div>
     )
   }
@@ -31,4 +28,4 @@ class CompanyLogin extends React.Component {
 //   add: PropTypes.func.isRequired
 // }
 
-export default companyLogin
+export default CompanyLogin
