@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
+import AddressInputContainer from './AddressInputContainer'
 
 const useStyles = makeStyles({
   root: {
@@ -38,6 +39,8 @@ export default function SimpleCard() {
             <GenderSelectContainer />
             {/* -------------birthday-input-area------------- */}
             <BirthdayInputContainer />
+            {/* -------------address-input-area------------- */}
+            <AddressInputContainer />
       </div>
       </CardContent>
       <CardActions>

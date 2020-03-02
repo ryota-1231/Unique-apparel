@@ -1,13 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-// import Link from '@material-ui/core/Link'
 import './main.css'
 import MainContainer from './MainContainer'
-
-// import SignInContainer from './SignInContainer'
-// import InterFaceContainer from './InterFaceContainer'
-// import SignUpContainer from './SignUpContainer'
-
 
 class UsersSignUp extends React.Component {
   render () {

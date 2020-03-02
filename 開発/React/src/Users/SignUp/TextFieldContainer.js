@@ -15,10 +15,10 @@ export default function BasicTextFields() {
   const classes = useStyles();
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="outlined-basic" label="年" variant="outlined" />
-      <TextField id="outlined-basic" label="月" variant="outlined" />
-      <TextField id="outlined-basic" label="日" variant="outlined" />
+    <form id='birthday-form' className={classes.root} noValidate autoComplete="off">
+      <TextField id="birthday-year" label="年" variant="outlined" />
+      <TextField id="birthday-month" label="月" variant="outlined" />
+      <TextField id="birthday-day" label="日" variant="outlined" />
     </form>
   );
 }
