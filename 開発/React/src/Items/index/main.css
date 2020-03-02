@@ -6,14 +6,34 @@
   margin-top: 64px;
 }
 
+.main-image {
+  margin-top: 100px;
+  width: 80%;
+  height: 200px;
+}
+
 .main-contents {
   display: flex;
+  width: 100%;
 }
 
 .category {
   border-bottom: 1px solid;
 }
 
+.sidebar {
+  width: 20%;
+}
+
 .items {
+  width: 80%;
   display: flex;
+}
+
+.item {
+  width: 30%;
+}
+
+.item-image {
+  width: 80%;
 }
