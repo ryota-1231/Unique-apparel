@@ -43,3 +43,28 @@ border-top: 1px solid #ddd;
 #birthday-form{
   padding: 9.5px;
 }
+
+/* -------------Address-area-------------*/
+.address-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+  }
+  
+  .address-title{
+    line-height: 163px;
+    margin: 0 ;
+    width: 200px;
+  }
+  
+  #address-form{
+    padding: 9.5px;
+  }
+
+  #post-code-search-interface{
+    margin-left: 290px;
+    margin-top: 15px;
+  }
+
+  #address-input{
+    width: 604px;
+  }
