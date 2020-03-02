@@ -2,24 +2,13 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
-import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-  },
-  paper: {
-    marginRight: theme.spacing(2),
-  },
-}));
-
 export default function MenuListComposition() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <Paper className={classes.paper}>
+    <div className="sidebar">
+      <h1 className="category">CATEGORY</h1>
+      <Paper className="paper">
         <MenuList>
           <Link href="#" ><MenuItem>全てのカテゴリ</MenuItem></Link>
           <Link href="#" ><MenuItem>コート・ブルゾン</MenuItem></Link>
