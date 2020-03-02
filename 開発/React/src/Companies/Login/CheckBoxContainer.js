@@ -19,7 +19,8 @@ class CheckBoxContainer extends React.Component {
             />
           </FormGroup>
         </FormControl>
-        <Button variant='contained' id='users-signin-button' color='secondary' href='#'>Sing In!</Button>
+        <Button variant='contained' id='company-signin-button' color='secondary' href='#'>Sing In!</Button>
+        <Button variant='outlined' id='company-signup-button' color='default' href='#'>Sing up</Button>
       </div>
     )
   }
