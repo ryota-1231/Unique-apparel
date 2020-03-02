@@ -4,11 +4,14 @@
 
 #company-login-wrapper{
   width: 900px;
-  margin: 0 auto;
+  height: 900px;
+  margin: 10px 20px 20px 10px;
+  text-align: text-left;
+
 }
 
 .contents {
-  width: 900px;
+  width: 1000px;
   height: 630px;
   display: flex;
 }
@@ -16,7 +19,7 @@
 /*------------------ content-left -----------------*/
 /*------------------ top-area -----------------*/
 .content-left{
-  width: 50%;
+  width: 100%;
   border: 1px solid #ddd;
 }
 
@@ -31,13 +34,18 @@
 
 /* -------------テキストボックス-------------*/
 .form-area{
-  width: 350px;
+  width: 400px;
   margin: 0 auto;
 }
 
-#standard-company-id, #standard-password{
+#Outlined-company-id{
   display: block;
-  width: 350px;
+  width: 400px;
+}
+
+#Outlined-password{
+  display: block;
+  width: 400px;
 }
 
 /* -------------チェックボックス・ラベル-------------*/
@@ -46,17 +54,21 @@
   margin: 30px auto;
 }
 
-#companys-signin-button{
-  margin-left: 90px;
-}
+/* #company-signin-button{
+
+} */
+
+#company-signup-button{
+  margin-left: 2px;
+} 
 
 .forget-password{
-  text-align: center;
+  text-align: text-right;
 }
 
 /*------------------ bottom-area -----------------*/
 /* -------------外部連携ボタン-------------*/
-.sign-in-bottom-area{
+/* .sign-in-bottom-area{
   padding: 20px 50px 50px;
   border-top: 0.5px solid #ddd;
   position: relative;
@@ -86,11 +98,11 @@
   display: block;
   width: 350px;
   margin: 0 auto;
-}
+} */
 
 /*------------------ content-right ------------------*/
-.content-right{
-  width: 50%;
+/* .content-right{
+  width: 5%;
   background-color: rgb(255, 155, 230);
   text-align: center;
 }
@@ -114,10 +126,10 @@
 
 .forget-password{
   display: block;
-}
+} */
 
-/*------------------ company-page-link ------------------*/
-.company-page-link{
+/*------------------ user-page-link ------------------*/
+.user-page-link{
   display: inline-block;
   margin-top: 20px !important;
 }
