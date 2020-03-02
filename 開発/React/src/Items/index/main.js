@@ -1,30 +1,23 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './main.css'
-import Link from '@material-ui/core/Link';
 import MenuListComposition from './sidebar';
+import Items from './items.js';
 
 console.log(Image);
 
 class ItemIndex extends Component {
   render () {
     // 最終的にはDBからitems.allとかで持ってくる予定
-    const items = [
-      {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
-      {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
-      {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"}]
     return (
       <div className="contents">
-        {/* <img src="#">メイン画面</img> */}
+        {/* ここにヘッダーがある予定 */}
+        <img src="/static/images/購入完了画面.png" className="main-image" />
         <div className="main-contents">
-          <div className="sidebar">
-            <h1 className="category">CATEGORY</h1>
-            <MenuListComposition />
-          </div>
-          <div className="items">
-            {items.map((item) =>
-              <Item item={item} key={item.name + item.amount} />)}
-          </div>
+          {/* サイドバーコンポーネントの呼び出し */}
+          <MenuListComposition />
+          {/* 商品一覧部分の呼び出し */}
+          <Items />
         </div>
       </div>
     )
@@ -32,21 +25,6 @@ class ItemIndex extends Component {
 }
 
 ItemIndex.propTypes = {
-  add: PropTypes.func.isRequirednpm
-}
-
-const Item = (props) => {
-  const {name, amount, image} = props.item
-  return (
-    <div>
-      <Link href="#"><img src={image}  alt="アイコン" /></Link>
-      <p>{name}</p>
-      <p>¥{amount}</p>
-    </div>
-  )
-}
-
-Item.propTypes = {
   add: PropTypes.func.isRequirednpm
 }
 
