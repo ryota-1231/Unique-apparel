@@ -8,7 +8,7 @@ class SignInContainer extends React.Component {
   render () {
     return (
       <div className='sign-in-top-area'>
-        <h2 className='sign-in-title'>Sign In To ...</h2>
+        <h2 className='sign-in-title'>Corporation User</h2>
         {/* -------------テキストボックス------------- */}
         <TextFieldContainer />
         {/* -------------チェックボックス・ラベル------------- */}
