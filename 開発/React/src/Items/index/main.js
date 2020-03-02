@@ -8,9 +8,11 @@ console.log(Image);
 
 class ItemIndex extends Component {
   render () {
+    // 最終的にはDBからitems.allとかで持ってくる予定
     const items = [
-      {name: "商品1", amount: "1000"},
-      {name: "商品2", amount: "2000"}]
+      {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
+      {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
+      {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"}]
     return (
       <div className="contents">
         {/* <img src="#">メイン画面</img> */}
@@ -34,10 +36,10 @@ ItemIndex.propTypes = {
 }
 
 const Item = (props) => {
-  const {name, amount} = props.item
+  const {name, amount, image} = props.item
   return (
     <div>
-      <Link href="#"><img src="./images/購入完了画面.png"  alt="アイコン" /></Link>
+      <Link href="#"><img src={image}  alt="アイコン" /></Link>
       <p>{name}</p>
       <p>¥{amount}</p>
     </div>
