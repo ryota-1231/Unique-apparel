@@ -65,23 +65,31 @@
 .sign-in-bottom-area h2{
   text-align: center;
   font-size: 30px;
+  padding-bottom:  30px
 }
 
 #google-btn{
   text-align: center;
   display: block;
   width: 350px;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
 }
 
 #instagram-btn{
   text-align: center;
   display: block;
   width: 350px;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
 }
 
 #twitter-btn{
+  text-align: center;
+  display: block;
+  width: 350px;
+  margin: 0 auto 15px;
+}
+
+#facebook-btn{
   text-align: center;
   display: block;
   width: 350px;

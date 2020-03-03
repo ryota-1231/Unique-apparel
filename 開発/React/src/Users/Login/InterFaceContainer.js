@@ -9,6 +9,7 @@ class InterFaceContainer extends React.Component {
         <Button variant='outlined' id='google-btn' className='btn'>Google Account</Button>
         <Button variant='outlined' color='secondary' id='instagram-btn' className='btn' href='#'>Instagram Account</Button>
         <Button variant='outlined' color='primary' id='twitter-btn' className='btn' href='#'>Twitter Account</Button>
+        <Button variant='outlined' color='primary' id='facebook-btn' className='btn' href='#'>Facebook Account</Button>
       </div>
     )
   }

@@ -3,10 +3,15 @@ import React from 'react'
 import './main.css'
 import MainContainer from './MainContainer'
 
-class UsersLogin extends React.Component {
+class UsersSignUp extends React.Component {
   render () {
     return (
-      <MainContainer />
+      <div id='user-signup-wrapper'>
+        <div className="signup-title-area">
+          <h2 className="signup-title">新規会員登録</h2>
+        </div>
+        <MainContainer />
+      </div>
     )
   }
 }
@@ -16,4 +21,4 @@ class UsersLogin extends React.Component {
 //   add: PropTypes.func.isRequired
 // }
 
-export default UsersLogin
+export default UsersSignUp
