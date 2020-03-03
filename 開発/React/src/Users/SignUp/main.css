@@ -56,51 +56,71 @@ border-top: 1px solid #ddd;
 .address-area{
   display: flex;
   border-top: 1px solid #ddd;
-  }
-  
-  .address-title{
-    line-height: 163px;
-    margin: 0 ;
-    width: 200px;
-  }
-  
-  #address-form{
-    padding: 9.5px;
+}
+
+.address-title{
+  line-height: 163px;
+  margin: 0 ;
+  width: 200px;
+}
+
+#address-form{
+  padding: 9.5px;
+}
+
+#post-code-search-interface{
+  margin-left: 290px;
+  margin-top: 15px;
+}
+
+#address-input{
+  width: 604px;
+}
+
+/* -------------Mail-area-------------*/
+.mail-area{
+  display: flex;
+  border-top: 1px solid #ddd;
   }
 
-  #post-code-search-interface{
-    margin-left: 290px;
-    margin-top: 15px;
-  }
+.mail-title-area{
+  margin: 0 ;
+  width: 200px;
+  line-height: 90px;
+}
 
-  #address-input{
-    width: 604px;
-  }
+.mail-title{
+  height: 20px;
+}
 
-  /* -------------Mail-area-------------*/
-  .mail-area{
-    display: flex;
-    border-top: 1px solid #ddd;
-    }
+.mail-subtitle{
+  height: 15px;
+}
 
-  .mail-title-area{
-    margin: 0 ;
-    width: 200px;
-    line-height: 90px;
-  }
+#mail-form{
+  padding: 9.5px;
+}
 
-  .mail-title{
-    height: 20px;
-  }
+#mail-input{
+  width: 604px;
+}
 
-  .mail-subtitle{
-    height: 15px;
-  }
+/* -------------PassWord-area-------------*/
+.password-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
 
-  #mail-form{
-    padding: 9.5px;
-  }
+.password-title{
+  line-height: 90px;
+  margin: 0 ;
+  width: 200px;
+}
 
-  #mail-input{
-    width: 604px;
-  }
+#password-form{
+  padding: 9.5px;
+}
+
+#password-input{
+  width: 400px;
+}

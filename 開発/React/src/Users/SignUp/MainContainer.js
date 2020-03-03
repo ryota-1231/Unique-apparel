@@ -8,6 +8,7 @@ import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
 import AddressInputContainer from './AddressInputContainer'
 import MailInputContainer from './MailInputContainer'
+import PassWordInputContainer from './PassWordInputContainer'
 
 const useStyles = makeStyles({
   root: {
@@ -44,6 +45,8 @@ export default function SimpleCard() {
             <AddressInputContainer />
             {/* -------------mail-input-area------------- */}
             <MailInputContainer />
+            {/* -------------password-input-area------------- */}
+            <PassWordInputContainer />
       </div>
       </CardContent>
       <CardActions>
