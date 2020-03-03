@@ -16,6 +16,14 @@
   padding: 30px 30px 40px;
 }
 
+.contents-title-area{
+  padding-bottom: 20px;
+}
+
+.contents-title{
+  font-weight: 300;
+}
+
 /* -------------Name-area-------------*/
 .name-area{
   display: flex;
@@ -134,7 +142,7 @@ border-top: 1px solid #ddd;
   padding: 9.5px;
 }
 
-#postcode-auto-input-interface{
+#address-auto-input-interface{
   margin-top: 16px;
 }
 
@@ -156,14 +164,6 @@ border-top: 1px solid #ddd;
 
 #address-form{
   padding: 9.5px;
-}
-
-#address-auto-input-interface{
-  margin-top: 16px;
-}
-
-#post-code-search-interface{
-  margin-top: 8px;
 }
 
 #address-input{
