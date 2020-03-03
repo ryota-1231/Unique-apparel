@@ -84,7 +84,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonBases () {
   const classes = useStyles()
-  
+
   return (
     <div className={classes.root}>
       {images.map(image => (

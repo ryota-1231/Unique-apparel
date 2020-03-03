@@ -1,12 +1,11 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import Link from '@material-ui/core/Link'
-import './main.css'
 import SignInContainer from './SignInContainer'
 import InterFaceContainer from './InterFaceContainer'
 import SignUpContainer from './SignUpContainer'
 
-class UsersLogin extends React.Component {
+class MainContainer extends React.Component {
   render () {
     return (
       <div id='user-login-wrapper'>
@@ -33,4 +32,4 @@ class UsersLogin extends React.Component {
 //   add: PropTypes.func.isRequired
 // }
 
-export default UsersLogin
+export default MainContainer
