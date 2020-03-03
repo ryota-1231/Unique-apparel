@@ -28,16 +28,16 @@
 .name-area{
   display: flex;
   border-top: 1px solid #ddd;
-  }
-  
-  .name-title{
-    line-height: 90px;
-    width: 140px;
-  }
-  
-  #name-form{
-    padding: 9.5px;
-  }
+}
+
+.name-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#name-form{
+  padding: 9.5px;
+}
 
   /* -------------Name-Kana-area-------------*/
 .name-kana-area{
@@ -58,7 +58,7 @@
 .mail-area{
   display: flex;
   border-top: 1px solid #ddd;
-  }
+}
 
 .mail-title-area{
   width: 200px;
@@ -100,7 +100,7 @@
   width: 400px;
 }
 
-/*------------------ gender-select-area -----------------*/
+/*------------------ gender-area -----------------*/
 .gender-area{
   display: flex;
   border-top: 1px solid #ddd;
@@ -114,8 +114,8 @@
 
 /* -------------Birthday-area-------------*/
 .birthday-area{
-display: flex;
-border-top: 1px solid #ddd;
+  display: flex;
+  border-top: 1px solid #ddd;
 }
 
 .birthday-title{
@@ -175,7 +175,6 @@ border-top: 1px solid #ddd;
   display: flex;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  
 }
 
 .phone-number-title{
