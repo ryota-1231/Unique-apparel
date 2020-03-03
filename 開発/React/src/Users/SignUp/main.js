@@ -7,8 +7,8 @@ class UsersSignUp extends React.Component {
   render () {
     return (
       <div id='user-signup-wrapper'>
-        <div className="signup-title-area">
-          <h2 className="signup-title">新規会員登録</h2>
+        <div className='signup-title-area'>
+          <h2 className='signup-title'>新規会員登録</h2>
         </div>
         <MainContainer />
       </div>
@@ -16,7 +16,7 @@ class UsersSignUp extends React.Component {
   }
 }
 
- {/* -------------propsのバリデーション------------- */}
+/* -------------propsのバリデーション------------- */
 // UsersLogin.propTypes = {
 //   add: PropTypes.func.isRequired
 // }

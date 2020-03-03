@@ -27,7 +27,7 @@ class MainContainer extends React.Component {
   }
 }
 
- {/* -------------propsのバリデーション------------- */}
+/* -------------propsのバリデーション------------- */
 // UsersLogin.propTypes = {
 //   add: PropTypes.func.isRequired
 // }
