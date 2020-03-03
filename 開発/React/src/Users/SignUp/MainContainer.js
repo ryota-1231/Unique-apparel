@@ -12,6 +12,7 @@ import PostCodeInputContainer from './PostCodeInputContainer'
 import AddressInputContainer from './AddressInputContainer'
 import MailInputContainer from './MailInputContainer'
 import PassWordInputContainer from './PassWordInputContainer'
+import PhoneNumberInputContainer from './PhoneNumberInputContainer'
 
 const useStyles = makeStyles({
   root: {
@@ -34,7 +35,7 @@ export default function SimpleCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card id='signup-area' className={classes.root}>
       <CardContent>
       <div className='contents'>
           <div className='contents-title-area'>
@@ -56,9 +57,11 @@ export default function SimpleCard() {
             <PostCodeInputContainer />
             {/* -------------address-input-area------------- */}
             <AddressInputContainer />
+            {/* -------------phone-input-area------------- */}
+            <PhoneNumberInputContainer />
       </div>
       </CardContent>
-      <CardActions>
+      <CardActions id='signup-btn-area'>
         <Button variant="contained" color="primary" size="large" id='user-register-btn'>会員登録する</Button>
       </CardActions>
     </Card>

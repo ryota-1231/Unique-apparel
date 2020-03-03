@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+#signup-area{
+  margin: 30px auto 60px;
+}
+
 .signup-title{
   font-size: 30px;
   color: rgb(131, 131, 131);
@@ -31,16 +35,62 @@
 .name-kana-area{
   display: flex;
   border-top: 1px solid #ddd;
+}
+
+.name-kana-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#name-kana-form{
+  padding: 9.5px;
+}
+
+  /* -------------Mail-area-------------*/
+.mail-area{
+  display: flex;
+  border-top: 1px solid #ddd;
   }
-  
-  .name-kana-title{
-    line-height: 90px;
-    width: 140px;
-  }
-  
-  #name-kana-form{
-    padding: 9.5px;
-  }
+
+.mail-title-area{
+  width: 200px;
+  line-height: 90px;
+}
+
+.mail-title{
+  height: 20px;
+}
+
+.mail-subtitle{
+  height: 15px;
+}
+
+#mail-form{
+  padding: 9.5px;
+}
+
+#mail-input{
+  width: 604px;
+}
+
+/* -------------PassWord-area-------------*/
+.password-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.password-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#password-form{
+  padding: 9.5px;
+}
+
+#password-input{
+  width: 400px;
+}
 
 /*------------------ gender-select-area -----------------*/
 .gender-area{
@@ -120,53 +170,32 @@ border-top: 1px solid #ddd;
   width: 604px;
 }
 
-/* -------------Mail-area-------------*/
-.mail-area{
+/* -------------PhoneNumber-area-------------*/
+.phone-number-area{
   display: flex;
   border-top: 1px solid #ddd;
-  }
-
-.mail-title-area{
-  width: 200px;
-  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+  
 }
 
-.mail-title{
-  height: 20px;
-}
-
-.mail-subtitle{
-  height: 15px;
-}
-
-#mail-form{
-  padding: 9.5px;
-}
-
-#mail-input{
-  width: 604px;
-}
-
-/* -------------PassWord-area-------------*/
-.password-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-.password-title{
+.phone-number-title{
   line-height: 90px;
   width: 140px;
 }
 
-#password-form{
+#phone-number-form{
   padding: 9.5px;
 }
 
-#password-input{
+#phone-number-input{
   width: 400px;
 }
 
 /* -------------Button-area-------------*/
+#signup-btn-area{
+  padding-bottom: 40px;
+}
+
 #user-register-btn{
   display: inline-block;
   width: 300px;
