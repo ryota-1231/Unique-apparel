@@ -19,6 +19,7 @@ class ItemIndex extends Component {
           {/* 商品一覧部分の呼び出し */}
           <Items />
         </div>
+        {/* ここにフッターがある予定 */}
       </div>
     )
   }
