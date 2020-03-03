@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+h4{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
 #user-signup-wrapper{
   width: 900px;
   margin: 0 auto;
@@ -66,5 +74,33 @@ border-top: 1px solid #ddd;
   }
 
   #address-input{
+    width: 604px;
+  }
+
+  /* -------------Mail-area-------------*/
+  .mail-area{
+    display: flex;
+    border-top: 1px solid #ddd;
+    }
+
+  .mail-title-area{
+    margin: 0 ;
+    width: 200px;
+    line-height: 90px;
+  }
+
+  .mail-title{
+    height: 20px;
+  }
+
+  .mail-subtitle{
+    height: 15px;
+  }
+
+  #mail-form{
+    padding: 9.5px;
+  }
+
+  #mail-input{
     width: 604px;
   }
