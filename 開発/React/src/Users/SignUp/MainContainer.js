@@ -4,6 +4,8 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import NameInputContainer from './NameInputContainer'
+import NameKanaInputContainer from './NameKanaInputContainer'
 import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
 import PostCodeInputContainer from './PostCodeInputContainer'
@@ -38,6 +40,14 @@ export default function SimpleCard() {
           <div className='contents-title-area'>
             <h3 className='contents-title'>基本情報</h3>
           </div>
+            {/* -------------name-area------------- */}
+            <NameInputContainer />
+            {/* -------------name-kana-area------------- */}
+            <NameKanaInputContainer />
+            {/* -------------mail-input-area------------- */}
+            <MailInputContainer />
+            {/* -------------password-input-area------------- */}
+            <PassWordInputContainer />
             {/* -------------gender-select-area------------- */}
             <GenderSelectContainer />
             {/* -------------birthday-input-area------------- */}
@@ -46,10 +56,6 @@ export default function SimpleCard() {
             <PostCodeInputContainer />
             {/* -------------address-input-area------------- */}
             <AddressInputContainer />
-            {/* -------------mail-input-area------------- */}
-            <MailInputContainer />
-            {/* -------------password-input-area------------- */}
-            <PassWordInputContainer />
       </div>
       </CardContent>
       <CardActions>
