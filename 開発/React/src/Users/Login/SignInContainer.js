@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from '@material-ui/core/Link'
 import './main.css'
-import SignInTextField from './SignInTextField'
-import SignInCheckBox from './SignInCheckBox'
+import TextFieldContainer from './TextFieldContainer'
+import CheckBoxContainer from './CheckBoxContainer'
 
 class SignInContainer extends React.Component {
   render () {
@@ -10,9 +10,9 @@ class SignInContainer extends React.Component {
       <div className='sign-in-top-area'>
         <h2 className='sign-in-title'>Sign In To ...</h2>
         {/* -------------テキストボックス------------- */}
-        <SignInTextField />
+        <TextFieldContainer />
         {/* -------------チェックボックス・ラベル------------- */}
-        <SignInCheckBox />
+        <CheckBoxContainer />
         <Link href='#' className='forget-password'>Forget PassWord?</Link>
       </div>
     )
