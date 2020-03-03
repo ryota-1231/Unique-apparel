@@ -7,7 +7,16 @@ export default function Items() {
   const items = [
     {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
     {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
-    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"}]
+    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"},
+    {name: "商品4", amount: "4000", image: "/static/images/購入完了画面.png"},
+    {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
+    {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
+    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"},
+    {name: "商品4", amount: "4000", image: "/static/images/購入完了画面.png"},
+    {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
+    {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
+    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"},
+    {name: "商品4", amount: "4000", image: "/static/images/購入完了画面.png"}]
   return (
     <div className="items">
       {items.map((item) =>
