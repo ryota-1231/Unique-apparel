@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
+import PostCodeInputContainer from './PostCodeInputContainer'
 import AddressInputContainer from './AddressInputContainer'
 import MailInputContainer from './MailInputContainer'
 import PassWordInputContainer from './PassWordInputContainer'
@@ -41,6 +42,8 @@ export default function SimpleCard() {
             <GenderSelectContainer />
             {/* -------------birthday-input-area------------- */}
             <BirthdayInputContainer />
+            {/* -------------postcode-input-area------------- */}
+            <PostCodeInputContainer />
             {/* -------------address-input-area------------- */}
             <AddressInputContainer />
             {/* -------------mail-input-area------------- */}
@@ -50,7 +53,7 @@ export default function SimpleCard() {
       </div>
       </CardContent>
       <CardActions>
-      <Button variant="contained" color="primary" size="large">会員登録する</Button>
+        <Button variant="contained" color="primary" size="large" id='user-register-btn'>会員登録する</Button>
       </CardActions>
     </Card>
   );

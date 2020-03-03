@@ -38,6 +38,29 @@ border-top: 1px solid #ddd;
   padding: 9.5px;
 }
 
+/* -------------PostCode-area-------------*/
+.postcode-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.postcode-title{
+  line-height: 90px;
+  width: 200px;
+}
+
+#postcode-form{
+  padding: 9.5px;
+}
+
+#postcode-auto-input-interface{
+  margin-top: 16px;
+}
+
+#post-code-search-interface{
+  margin-top: 8px;
+}
+
 /* -------------Address-area-------------*/
 .address-area{
   display: flex;
@@ -54,9 +77,12 @@ border-top: 1px solid #ddd;
   padding: 9.5px;
 }
 
+#address-auto-input-interface{
+  margin-top: 16px;
+}
+
 #post-code-search-interface{
-  margin-left: 290px;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 #address-input{
@@ -108,4 +134,11 @@ border-top: 1px solid #ddd;
 
 #password-input{
   width: 400px;
+}
+
+/* -------------Button-area-------------*/
+#user-register-btn{
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
 }
