@@ -1,5 +1,5 @@
 import React from 'react'
-import PassWordTextContainer from './PassWordTextContainer'
+import PassWordTextField from './PassWordTextField'
 
 class PassWordInputContainer extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class PassWordInputContainer extends React.Component {
         <div className='password-title-area'>
           <h4 className='password-title'>パスワード</h4>
         </div>
-        <PassWordTextContainer />
+        <PassWordTextField />
       </div>
     )
   }

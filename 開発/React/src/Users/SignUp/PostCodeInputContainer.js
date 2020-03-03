@@ -1,5 +1,5 @@
 import React from 'react'
-import PostCodeTextContainer from './PostCodeTextContainer'
+import PostCodeTextField from './PostCodeTextField'
 
 class PostCodeInputContainer extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class PostCodeInputContainer extends React.Component {
         <div className='postcode-title-area'>
           <h4 className='postcode-title'>郵便番号</h4>
         </div>
-        <PostCodeTextContainer />
+        <PostCodeTextField />
       </div>
     )
   }

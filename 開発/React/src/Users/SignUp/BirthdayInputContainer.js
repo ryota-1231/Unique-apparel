@@ -1,5 +1,5 @@
 import React from 'react'
-import TextFieldContainer from './TextFieldContainer'
+import BirthdayTextField from './BirthdayTextField'
 
 class BirthdayInputContainer extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class BirthdayInputContainer extends React.Component {
         <div className='birthday-title-area'>
           <h4 className='birthday-title'>生年月日</h4>
         </div>
-        <TextFieldContainer />
+        <BirthdayTextField />
       </div>
     )
   }

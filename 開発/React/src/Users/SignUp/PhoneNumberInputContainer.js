@@ -1,5 +1,5 @@
 import React from 'react'
-import PhoneNumberTextContainer from './PhoneNumberTextContainer'
+import PhoneNumberTextField from './PhoneNumberTextField'
 
 class PhoneNumberInputContainer extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class PhoneNumberInputContainer extends React.Component {
         <div className='phone-number-title-area'>
           <h4 className='phone-number-title'>電話番号</h4>
         </div>
-        <PhoneNumberTextContainer />
+        <PhoneNumberTextField />
       </div>
     )
   }

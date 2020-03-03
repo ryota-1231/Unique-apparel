@@ -1,5 +1,5 @@
 import React from 'react'
-import AddressTextContainer from './AddressTextContainer'
+import AddressTextField from './AddressTextField'
 
 class AddressInputContainer extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class AddressInputContainer extends React.Component {
         <div className='address-title-area'>
           <h4 className='address-title'>住所</h4>
         </div>
-        <AddressTextContainer />
+        <AddressTextField />
       </div>
     )
   }

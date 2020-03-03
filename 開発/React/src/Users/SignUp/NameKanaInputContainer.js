@@ -1,5 +1,5 @@
 import React from 'react'
-import NameKanaTextContainer from './NameKanaTextContainer'
+import NameKanaTextField from './NameKanaTextField'
 
 class NameKanaInputContainer extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class NameKanaInputContainer extends React.Component {
         <div className='name-kana-title-area'>
           <h4 className='name-kana-title'>氏名（かな）</h4>
         </div>
-        <NameKanaTextContainer />
+        <NameKanaTextField />
       </div>
     )
   }

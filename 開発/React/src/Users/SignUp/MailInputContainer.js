@@ -1,5 +1,5 @@
 import React from 'react'
-import MailTextContainer from './MailTextContainer'
+import MailTextField from './MailTextField'
 
 class MailInputContainer extends React.Component {
   render () {
@@ -9,7 +9,7 @@ class MailInputContainer extends React.Component {
           <h4 className='mail-title'>メールアドレス</h4>
           <p className='mail-subtitle'>(ユーザーID)</p>
         </div>
-        <MailTextContainer />
+        <MailTextField />
       </div>
     )
   }
