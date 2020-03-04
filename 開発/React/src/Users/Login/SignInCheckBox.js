@@ -5,7 +5,7 @@ import FormGroup from '@material-ui/core/FormGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormControl from '@material-ui/core/FormControl'
 
-class CheckBoxContainer extends React.Component {
+class SignInCheckBox extends React.Component {
   render () {
     return (
       <div className='check-area'>
@@ -25,4 +25,4 @@ class CheckBoxContainer extends React.Component {
   }
 }
 
-export default CheckBoxContainer
+export default SignInCheckBox
