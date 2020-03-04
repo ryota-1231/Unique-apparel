@@ -1,9 +1,9 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
 import NameInputContainer from './NameInputContainer'
 import NameKanaInputContainer from './NameKanaInputContainer'
 import MailInputContainer from './MailInputContainer'
@@ -16,23 +16,23 @@ import PhoneNumberInputContainer from './PhoneNumberInputContainer'
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275
+    minWidth: 275,
   },
   bullet: {
     display: 'inline-block',
     margin: '0 2px',
-    transform: 'scale(0.8)'
+    transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14
+    fontSize: 14,
   },
   pos: {
-    marginBottom: 12
-  }
-})
+    marginBottom: 12,
+  },
+});
 
-export default function SimpleCard () {
-  const classes = useStyles()
+export default function SimpleCard() {
+  const classes = useStyles();
 
   return (
     <Card id='signup-area' className={classes.root}>
@@ -62,8 +62,8 @@ export default function SimpleCard () {
         </div>
       </CardContent>
       <CardActions id='signup-btn-area'>
-        <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
+        <Button variant="contained" color="primary" size="large" id='user-register-btn'>会員登録する</Button>
       </CardActions>
     </Card>
-  )
+  );
 }

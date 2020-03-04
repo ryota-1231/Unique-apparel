@@ -2,7 +2,7 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField'
 import './main.css'
 
-class TextFieldContainer extends React.Component {
+class SignInTextField extends React.Component {
   render () {
     return (
       <div className='form-area'>
@@ -15,4 +15,4 @@ class TextFieldContainer extends React.Component {
   }
 }
 
-export default TextFieldContainer
+export default SignInTextField
