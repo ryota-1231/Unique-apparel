@@ -1,14 +1,9 @@
-p {
-  margin: 8px 0;
-}
-
 .contents {
   text-align: center;
 }
 
-.contents h1 {
-  margin-top: 64px;
-}
+
+/* トップ画像 */
 
 .main-image {
   margin-top: 100px;
@@ -16,12 +11,16 @@ p {
   height: 200px;
 }
 
+/* メイン部分 */
+
 .main-contents {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin-top: 100px;
 }
+
+/* サイドバー */
 
 .category {
   border-bottom: 1px solid;
@@ -31,6 +30,8 @@ p {
   width: 15%;
 }
 
+/* 商品一覧 */
+
 .items {
   width: 75%;
   display: flex;
@@ -39,6 +40,10 @@ p {
 
 .item {
   width: 25%;
+  margin: 8px 0;
+}
+
+.item p {
   margin: 8px 0;
 }
 
