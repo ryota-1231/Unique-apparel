@@ -1,45 +1,37 @@
 import React from 'react';
-import PropTypes from 'prop-types'
 import Link from '@material-ui/core/Link';
 
 
 export default function Items() {
+  // 最終的にはDBからitems.allとかで持ってくる予定
   const items = [
-    {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
-    {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
-    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"},
-    {name: "商品4", amount: "4000", image: "/static/images/購入完了画面.png"},
-    {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
-    {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
-    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"},
-    {name: "商品4", amount: "4000", image: "/static/images/購入完了画面.png"},
-    {name: "商品1", amount: "1000", image: "/static/images/購入完了画面.png"},
-    {name: "商品2", amount: "2000", image: "/static/images/購入完了画面.png"},
-    {name: "商品3", amount: "3000", image: "/static/images/購入完了画面.png"},
-    {name: "商品4", amount: "4000", image: "/static/images/購入完了画面.png"}]
+    {name: "商品1", price: "1000", image: "/static/images/購入完了画面.png"},
+    {name: "商品2", price: "2000", image: "/static/images/購入完了画面.png"},
+    {name: "商品3", price: "3000", image: "/static/images/購入完了画面.png"},
+    {name: "商品4", price: "4000", image: "/static/images/購入完了画面.png"},
+    {name: "商品1", price: "1000", image: "/static/images/購入完了画面.png"},
+    {name: "商品2", price: "2000", image: "/static/images/購入完了画面.png"},
+    {name: "商品3", price: "3000", image: "/static/images/購入完了画面.png"},
+    {name: "商品4", price: "4000", image: "/static/images/購入完了画面.png"},
+    {name: "商品1", price: "1000", image: "/static/images/購入完了画面.png"},
+    {name: "商品2", price: "2000", image: "/static/images/購入完了画面.png"},
+    {name: "商品3", price: "3000", image: "/static/images/購入完了画面.png"},
+    {name: "商品4", price: "4000", image: "/static/images/購入完了画面.png"}]
   return (
     <div className="items">
       {items.map((item) =>
-        <Item item={item} key={item.name + item.amount} />)}
+        <Item item={item} key={item.name + item.price} />)}
     </div>
   );
 }
 
-Items.propTypes = {
-  add: PropTypes.func.isRequirednpm
-}
-
 const Item = (props) => {
-  const {name, amount, image} = props.item
+  const {name, price, image} = props.item
   return (
     <div className="item">
       <Link href="#"><img src={image} className="item-image" alt="アイコン" /></Link>
       <p>{name}</p>
-      <p>¥{amount}</p>
+      <p>¥{price}</p>
     </div>
   )
-}
-
-Item.propTypes = {
-  add: PropTypes.func.isRequirednpm
 }
