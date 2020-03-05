@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import './main.css'
 import MenuListComposition from './sidebar';
 import Items from './items.js';
 
-console.log(Image);
-
 class ItemIndex extends Component {
   render () {
-    // 最終的にはDBからitems.allとかで持ってくる予定
     return (
       <div className="contents">
         {/* ここにヘッダーがある予定 */}
@@ -23,10 +19,6 @@ class ItemIndex extends Component {
       </div>
     )
   }
-}
-
-ItemIndex.propTypes = {
-  add: PropTypes.func.isRequirednpm
 }
 
 export default ItemIndex;
