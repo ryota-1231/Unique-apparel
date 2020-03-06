@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "webpack": "webpack -d"
+    "webpack": "webpack -d",
+    "build:development": "npx webpack --config webpack.config.development.js",
+    "build:production": "npx webpack --config webpack.config.production.js",
+    "watch:development": "npx webpack --watch --config webpack.config.development.js",
+    "watch:production": "npx webpack --watch --config webpack.config.production.js"
   },
   "keywords": [],
   "author": "",
@@ -20,11 +24,13 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
+    "dotenv-webpack": "^1.7.0",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-react": "^7.18.3",
