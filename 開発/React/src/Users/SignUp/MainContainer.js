@@ -11,7 +11,6 @@ import PassWordInputContainer from './PassWordInputContainer'
 import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
 import PostCodeInputContainer from './PostCodeInputContainer'
-// import AddressInputContainer from './AddressInputContainer'
 import PhoneNumberInputContainer from './PhoneNumberInputContainer'
 
 const useStyles = makeStyles({
