@@ -35,3 +35,4 @@ chrome-user-data
 *.swp
 *.swo
 *react*min*.js
+.env

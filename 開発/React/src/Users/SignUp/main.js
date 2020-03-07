@@ -1,5 +1,4 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 import './main.css'
 import MainContainer from './MainContainer'
 
@@ -15,10 +14,5 @@ class UsersSignUp extends React.Component {
     )
   }
 }
-
-/* -------------propsのバリデーション------------- */
-// UsersLogin.propTypes = {
-//   add: PropTypes.func.isRequired
-// }
 
 export default UsersSignUp

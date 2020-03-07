@@ -127,43 +127,49 @@
   padding: 9.5px;
 }
 
-/* -------------PostCode-area-------------*/
+/* -------------Address-area-------------*/
 .postcode-area{
   display: flex;
   border-top: 1px solid #ddd;
 }
 
-.postcode-title{
-  line-height: 90px;
-  width: 140px;
-}
-
 #postcode-form{
+  height: 91px;
   padding: 9.5px;
 }
 
+#psotcode-container{
+  height: 56px;
+  margin: 8px;
+}
+
 #address-auto-input-interface{
-  margin-top: 16px;
+  margin: 8px 150px 8px 20px;
 }
 
 #post-code-search-interface{
-  margin-top: 8px;
-}
-
-/* -------------Address-area-------------*/
-.address-area{
-  display: flex;
-  border-top: 1px solid #ddd;
+  line-height: 44px;
 }
 
 .address-title{
-  line-height: 163px;
   margin: 0 ;
   width: 140px;
+  line-height: 209px;
 }
 
 #address-form{
   padding: 9.5px;
+}
+
+#address-auto-input {
+  display: flex;
+  padding: 9.5px;
+  margin: 0 8px 8px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+#address-prefectures-input {
+  margin-right: 10px;
 }
 
 #address-input{
