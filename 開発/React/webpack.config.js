@@ -1,4 +1,5 @@
-var webpack = require('webpack');
+var webpack = require('webpack')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   entry: {
@@ -30,9 +31,7 @@ module.exports = {
       loader: 'babel-loader'
     }]
   },
-  plugins : [
-    new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-    })
-  ],
+  plugins: [
+    new Dotenv('./.env')
+  ]
 }
