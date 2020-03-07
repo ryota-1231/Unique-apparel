@@ -13,7 +13,7 @@
 }
 
 .contents {
-  padding: 30px 30px 40px;
+  padding: 10px 30px ;
 }
 
 .contents-title-area{
@@ -39,6 +39,21 @@
 /* -------------共通化-------------*/
 .full-width{
   width: 600px;
+}
+
+/* -------------Company-Name-area-------------*/
+.company-name-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.company-name-title{
+  line-height: 75px;
+  width: 140px;
+}
+
+#company-name-form{
+  padding: 9.5px;
 }
 
 /* -------------Address-area-------------*/
@@ -106,12 +121,13 @@
 }
 
 .name-title{
-  line-height: 75px;
+  line-height: 56px;
+  padding-top: 9.5px;
   width: 140px;
 }
 
 #name-form{
-  padding: 9.5px;
+  padding: 9.5px 9.5px 0;
 }
 
   /* -------------Name-Kana-area-------------*/
@@ -120,12 +136,12 @@
 }
 
 .name-kana-title{
-  line-height: 75px;
+  line-height: 56px;
   width: 140px;
 }
 
 #name-kana-form{
-  padding: 9.5px;
+  padding: 0 9.5px 9.5px;
 }
 
   /* -------------Mail-area-------------
