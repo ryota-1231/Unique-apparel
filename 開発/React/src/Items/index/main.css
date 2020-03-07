@@ -1,0 +1,52 @@
+.contents {
+  text-align: center;
+}
+
+
+/* トップ画像 */
+
+.main-image {
+  margin-top: 100px;
+  width: 80%;
+  height: 200px;
+}
+
+/* メイン部分 */
+
+.main-contents {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* サイドバー */
+
+.category {
+  border-bottom: 1px solid;
+}
+
+.sidebar {
+  width: 15%;
+}
+
+/* 商品一覧 */
+
+.items {
+  width: 75%;
+  display: flex;
+  flex-wrap : wrap;
+}
+
+.item {
+  width: 25%;
+  margin: 8px 0;
+}
+
+.item p {
+  margin: 8px 0;
+}
+
+.item-image {
+  width: 80%;
+}
