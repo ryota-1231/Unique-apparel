@@ -8,6 +8,8 @@ import BusinessTypeContainer from './BusinessTypeContainer'
 import CompanyNameContainer from './CompanyNameContainer'
 import PostCodeInputContainer from './PostCodeInputContainer'
 import PhoneNumberInputContainer from './PhoneNumberInputContainer'
+import NameInputContainer from './NameInputContainer'
+import NameKanaInputContainer from './NameKanaInputContainer'
 
 const useStyles = makeStyles({
   root: {
@@ -51,6 +53,10 @@ export default function SimpleCard () {
           <PostCodeInputContainer />
           {/* -------------電話番号入力------------- */}
           <PhoneNumberInputContainer />
+          {/* -------------代表者氏名入力------------- */}
+          <NameInputContainer />
+          {/* -------------代表者氏名（かな）入力------------- */}
+          <NameKanaInputContainer />
         
         </div>
       </CardContent>

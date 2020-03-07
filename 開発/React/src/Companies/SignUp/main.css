@@ -41,82 +41,6 @@
   width: 600px;
 }
 
-/* -------------Name-area-------------*/
-.name-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-.name-title{
-  line-height: 131px;
-  width: 140px;
-}
-
-#name-form{
-  padding: 9.5px;
-}
-
-  /* -------------Name-Kana-area-------------*/
-.name-kana-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-.name-kana-title{
-  line-height: 90px;
-  width: 140px;
-}
-
-#name-kana-form{
-  padding: 9.5px;
-}
-
-  /* -------------Mail-area-------------*/
-.mail-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-.mail-title-area{
-  width: 200px;
-  line-height: 90px;
-}
-
-.mail-title{
-  height: 20px;
-}
-
-.mail-subtitle{
-  height: 15px;
-}
-
-#mail-form{
-  padding: 9.5px;
-}
-
-#mail-input{
-  width: 604px;
-}
-
-/* -------------PassWord-area-------------*/
-.password-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-.password-title{
-  line-height: 90px;
-  width: 140px;
-}
-
-#password-form{
-  padding: 9.5px;
-}
-
-#password-input{
-  width: 400px;
-}
-
 /* -------------Address-area-------------*/
 .postcode-area{
   display: flex;
@@ -142,7 +66,7 @@
 }
 
 #address-form{
-  padding: 0 9.5px 0;
+  padding: 0 9.5px 9.5px;
 }
 
 #address-auto-input {
@@ -160,11 +84,10 @@
 .phone-number-area{
   display: flex;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 
 .phone-number-title{
-  line-height: 90px;
+  line-height: 181px;
   width: 140px;
 }
 
@@ -175,6 +98,62 @@
 #phone-number-input{
   width: 400px;
 }
+
+/* -------------Name-area-------------*/
+.name-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.name-title{
+  line-height: 75px;
+  width: 140px;
+}
+
+#name-form{
+  padding: 9.5px;
+}
+
+  /* -------------Name-Kana-area-------------*/
+.name-kana-area{
+  display: flex;
+}
+
+.name-kana-title{
+  line-height: 75px;
+  width: 140px;
+}
+
+#name-kana-form{
+  padding: 9.5px;
+}
+
+  /* -------------Mail-area-------------
+/* .mail-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.mail-title-area{
+  width: 200px;
+  line-height: 90px;
+}
+
+.mail-title{
+  height: 20px;
+}
+
+.mail-subtitle{
+  height: 15px;
+}
+
+#mail-form{
+  padding: 9.5px;
+}
+
+#mail-input{
+  width: 604px;
+} */
 
 /* -------------Button-area-------------*/
 #signup-btn-area{

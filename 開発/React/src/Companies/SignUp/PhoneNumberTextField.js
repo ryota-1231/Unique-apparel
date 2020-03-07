@@ -16,6 +16,7 @@ export default function BasicTextFields () {
   return (
     <form id='phone-number-form' className={classes.root} noValidate autoComplete='off'>
       <TextField id='phone-number-input' label='電話番号' style={{ margin: 8 }} margin='normal' helperText='ハイフンなしで記入してください' variant='outlined' size='small' />
+      <TextField id='phone-number-input' label='FAX番号' style={{ margin: 8 }} margin='normal' helperText='ハイフンなしで記入してください' variant='outlined' size='small' />
     </form>
   )
 }
