@@ -12,7 +12,7 @@ class AddressGetApi extends React.Component {
     super(props)
     this.state = {
       postCode: '',
-      prefectures: '都道府県/市区町村',
+      prefectures: '(都道府県/市区町村)',
       city: ''
     }
     this.submitAddress = this.submitAddress.bind(this)
