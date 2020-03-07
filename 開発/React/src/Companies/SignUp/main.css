@@ -1,0 +1,223 @@
+#user-signup-wrapper{
+  width: 900px;
+  margin: 0 auto;
+}
+
+#signup-area{
+  margin: 30px auto 60px;
+}
+
+.signup-title{
+  font-size: 30px;
+  color: rgb(131, 131, 131);
+}
+
+.contents {
+  padding: 30px 30px 40px;
+}
+
+.contents-title-area{
+  padding-bottom: 20px;
+}
+
+.contents-title{
+  font-weight: 300;
+}
+
+#check-list-title{
+  height: 30px;
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid #000
+}
+#check-list-description{
+  height: 100px;
+  width: 100%;
+  border: 0 1px 1px 1px  solid #000;
+}
+
+/* -------------共通化-------------*/
+.full-width{
+  width: 604px;
+}
+
+/* -------------Name-area-------------*/
+.name-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.name-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#name-form{
+  padding: 9.5px;
+}
+
+.full-width{
+  width: 604px;
+}
+
+  /* -------------Name-Kana-area-------------*/
+.name-kana-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.name-kana-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#name-kana-form{
+  padding: 9.5px;
+}
+
+  /* -------------Mail-area-------------*/
+.mail-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.mail-title-area{
+  width: 200px;
+  line-height: 90px;
+}
+
+.mail-title{
+  height: 20px;
+}
+
+.mail-subtitle{
+  height: 15px;
+}
+
+#mail-form{
+  padding: 9.5px;
+}
+
+#mail-input{
+  width: 604px;
+}
+
+/* -------------PassWord-area-------------*/
+.password-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.password-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#password-form{
+  padding: 9.5px;
+}
+
+#password-input{
+  width: 400px;
+}
+
+/*------------------ gender-area -----------------*/
+.gender-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+  height: 90px;
+}
+
+.gender-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+/* -------------Birthday-area-------------*/
+.birthday-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.birthday-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#birthday-form{
+  padding: 9.5px;
+}
+
+/* -------------PostCode-area-------------*/
+.postcode-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.postcode-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#postcode-form{
+  padding: 9.5px;
+}
+
+#address-auto-input-interface{
+  margin-top: 16px;
+}
+
+#post-code-search-interface{
+  margin-top: 8px;
+}
+
+/* -------------Address-area-------------*/
+.address-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.address-title{
+  line-height: 163px;
+  margin: 0 ;
+  width: 140px;
+}
+
+#address-form{
+  padding: 9.5px;
+}
+
+#address-input{
+  width: 604px;
+}
+
+/* -------------PhoneNumber-area-------------*/
+.phone-number-area{
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.phone-number-title{
+  line-height: 90px;
+  width: 140px;
+}
+
+#phone-number-form{
+  padding: 9.5px;
+}
+
+#phone-number-input{
+  width: 400px;
+}
+
+/* -------------Button-area-------------*/
+#signup-btn-area{
+  padding-bottom: 40px;
+}
+
+#user-register-btn{
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+}

@@ -6,14 +6,6 @@ import CardContent from '@material-ui/core/CardContent'
 import Button from '@material-ui/core/Button'
 import BusinessTypeContainer from './BusinessTypeContainer'
 import CompanyNameContainer from './CompanyNameContainer'
-import NameKanaInputContainer from './NameKanaInputContainer'
-import MailInputContainer from './MailInputContainer'
-import PassWordInputContainer from './PassWordInputContainer'
-import GenderSelectContainer from './GenderSelectContainer'
-import BirthdayInputContainer from './BirthdayInputContainer'
-import PostCodeInputContainer from './PostCodeInputContainer'
-import AddressInputContainer from './AddressInputContainer'
-import PhoneNumberInputContainer from './PhoneNumberInputContainer'
 
 const useStyles = makeStyles({
   root: {
@@ -53,22 +45,7 @@ export default function SimpleCard () {
           <BusinessTypeContainer />
           {/* -------------会社名入力------------- */}
           <CompanyNameContainer />
-          {/* -------------氏名（かな）入力------------- */}
-          <NameKanaInputContainer />
-          {/* -------------メールアドレス入力------------- */}
-          <MailInputContainer />
-          {/* -------------パスワード入力------------- */}
-          <PassWordInputContainer />
-          {/* -------------性別入力------------- */}
-          <GenderSelectContainer />
-          {/* -------------生年月日入力------------- */}
-          <BirthdayInputContainer />
-          {/* -------------郵便番号入力------------- */}
-          <PostCodeInputContainer />
-          {/* -------------住所入力------------- */}
-          <AddressInputContainer />
-          {/* -------------電話番号入力------------- */}
-          <PhoneNumberInputContainer />
+        
         </div>
       </CardContent>
       <CardActions id='signup-btn-area'>
