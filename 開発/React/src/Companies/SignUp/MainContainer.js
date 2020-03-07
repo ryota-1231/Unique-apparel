@@ -6,6 +6,8 @@ import CardContent from '@material-ui/core/CardContent'
 import Button from '@material-ui/core/Button'
 import BusinessTypeContainer from './BusinessTypeContainer'
 import CompanyNameContainer from './CompanyNameContainer'
+import PostCodeInputContainer from './PostCodeInputContainer'
+import PhoneNumberInputContainer from './PhoneNumberInputContainer'
 
 const useStyles = makeStyles({
   root: {
@@ -45,6 +47,10 @@ export default function SimpleCard () {
           <BusinessTypeContainer />
           {/* -------------会社名入力------------- */}
           <CompanyNameContainer />
+          {/* -------------住所入力------------- */}
+          <PostCodeInputContainer />
+          {/* -------------電話番号入力------------- */}
+          <PhoneNumberInputContainer />
         
         </div>
       </CardContent>

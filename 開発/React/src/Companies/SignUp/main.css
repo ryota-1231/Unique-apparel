@@ -38,7 +38,7 @@
 
 /* -------------共通化-------------*/
 .full-width{
-  width: 604px;
+  width: 600px;
 }
 
 /* -------------Name-area-------------*/
@@ -48,16 +48,12 @@
 }
 
 .name-title{
-  line-height: 90px;
+  line-height: 131px;
   width: 140px;
 }
 
 #name-form{
   padding: 9.5px;
-}
-
-.full-width{
-  width: 604px;
 }
 
   /* -------------Name-Kana-area-------------*/
@@ -121,74 +117,43 @@
   width: 400px;
 }
 
-/*------------------ gender-area -----------------*/
-.gender-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-  height: 90px;
-}
-
-.gender-title{
-  line-height: 90px;
-  width: 140px;
-}
-
-/* -------------Birthday-area-------------*/
-.birthday-area{
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-.birthday-title{
-  line-height: 90px;
-  width: 140px;
-}
-
-#birthday-form{
-  padding: 9.5px;
-}
-
-/* -------------PostCode-area-------------*/
+/* -------------Address-area-------------*/
 .postcode-area{
   display: flex;
   border-top: 1px solid #ddd;
-}
-
-.postcode-title{
-  line-height: 90px;
-  width: 140px;
 }
 
 #postcode-form{
   padding: 9.5px;
 }
 
+#psotcode-container{
+  margin: 8px;
+}
+
 #address-auto-input-interface{
-  margin-top: 16px;
-}
-
-#post-code-search-interface{
-  margin-top: 8px;
-}
-
-/* -------------Address-area-------------*/
-.address-area{
-  display: flex;
-  border-top: 1px solid #ddd;
+  margin: 2px 150px 2px 8px;
 }
 
 .address-title{
-  line-height: 163px;
   margin: 0 ;
   width: 140px;
+  line-height: 183px;
 }
 
 #address-form{
-  padding: 9.5px;
+  padding: 0 9.5px 0;
 }
 
-#address-input{
-  width: 604px;
+#address-auto-input {
+  display: flex;
+  padding: 9.5px;
+  margin: 0 8px 8px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+#address-prefectures-input {
+  margin-right: 10px;
 }
 
 /* -------------PhoneNumber-area-------------*/
