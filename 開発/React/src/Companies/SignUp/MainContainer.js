@@ -5,7 +5,7 @@ import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Button from '@material-ui/core/Button'
 import BusinessTypeContainer from './BusinessTypeContainer'
-import NameInputContainer from './NameInputContainer'
+import CompanyNameContainer from './CompanyNameContainer'
 import NameKanaInputContainer from './NameKanaInputContainer'
 import MailInputContainer from './MailInputContainer'
 import PassWordInputContainer from './PassWordInputContainer'
@@ -52,7 +52,7 @@ export default function SimpleCard () {
           {/* -------------事業形態------------- */}
           <BusinessTypeContainer />
           {/* -------------会社名入力------------- */}
-          <NameInputContainer />
+          <CompanyNameContainer />
           {/* -------------氏名（かな）入力------------- */}
           <NameKanaInputContainer />
           {/* -------------メールアドレス入力------------- */}
