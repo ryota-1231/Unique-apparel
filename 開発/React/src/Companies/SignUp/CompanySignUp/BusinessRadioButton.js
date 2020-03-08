@@ -6,26 +6,16 @@ import RadioGroup from '@material-ui/core/RadioGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormControl from '@material-ui/core/FormControl'
 
-// const useStyles = makeStyles(theme => ({
-//   formControl: {
-//     margin: theme.spacing(3)
-//   }
-// }))
-
-// const [value, setValue] = React.useState('female')
-
 class BusinessRadioButton extends React.Component {
   constructor(){
     super()
     this.handleChange = this.handleChange.bind(this)
   }
   handleChange (e){
-      // setValue(e.target.value)
       console.log(e)
   }
 
   render () {
-    // const classes = useStyles()
     return (
       <div>
         <FormControl component='fieldset'>

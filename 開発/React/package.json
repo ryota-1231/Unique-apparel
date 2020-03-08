@@ -9,7 +9,9 @@
     "build:development": "npx webpack --config webpack.config.development.js",
     "build:production": "npx webpack --config webpack.config.production.js",
     "watch:development": "npx webpack --watch --config webpack.config.development.js",
-    "watch:production": "npx webpack --watch --config webpack.config.production.js"
+    "watch:production": "npx webpack --watch --config webpack.config.production.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,10 @@
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-links": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
+    "@storybook/react": "^5.3.14",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.7",
