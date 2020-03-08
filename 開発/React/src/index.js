@@ -13,6 +13,6 @@ ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
-    <Purchase />,
+  <Purchase />,
   document.getElementById('root')
 )
