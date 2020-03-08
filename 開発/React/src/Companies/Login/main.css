@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+}
+
+#company-login-wrapper{
+  width: 650px;
+  height: 500px;
+  margin: 100px auto;
+  text-align: left;
+
+}
+
+.contents {
+  width: 650px;
+  height: 500px;
+  display: flex;
+}
+
+/*------------------ content-left -----------------*/
+/*------------------ top-area -----------------*/
+.content-left{
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.sign-in-top-area{
+  padding: 20px 30px 20px;
+}
+
+.sign-in-title{
+  text-align: center;
+  font-size: 30px;
+}
+
+/* -------------テキストボックス-------------*/
+.form-area{
+  width: 400px;
+  margin: 0 auto;
+}
+
+#Outlined-company-id{
+  display: block;
+  width: 400px;
+}
+
+#Outlined-password{
+  display: block;
+  width: 400px;
+}
+
+/* -------------チェックボックス・ラベル-------------*/
+.check-area{
+  width: 350px;
+  margin: 30px auto;
+}
+
+/* #company-signin-button{
+
+} */
+
+#company-signup-button{
+  margin-left: 2px;
+} 
+
+.forget-password{
+  text-align: right;
+}
+
+/*------------------ bottom-area -----------------*/
+
+
+/*------------------ user-page-link ------------------*/
+.user-page-link{
+  display: inline-block;
+  /* margin-top: 20px !important; */
+  text-align: right;
+  /* margin: 10px 10px; */
+}
