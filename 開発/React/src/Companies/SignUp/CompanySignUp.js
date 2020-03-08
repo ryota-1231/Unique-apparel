@@ -1,5 +1,5 @@
 import React from 'react'
-import BusinessTypeContainer from './CompanySignUp/BusinessTypeContainer'
+import RadioField from '../../Molecules/RadioField'
 import CompanyNameContainer from './CompanySignUp/CompanyNameContainer'
 import PostCodeInputContainer from './CompanySignUp/PostCodeInputContainer'
 import PhoneNumberInputContainer from './CompanySignUp/PhoneNumberInputContainer'
@@ -10,7 +10,7 @@ class CompanySignUp extends React.Component {
     return (
       <div className='company-signup-area'>
         {/* -------------事業形態------------- */}
-        <BusinessTypeContainer title='事業形態' radioBtnLeft='法人' radioBtnRight='個人事業主' />
+        <RadioField name='事業形態' label={['法人', '個人事業主']}/>
         {/* -------------会社名入力------------- */}
         <CompanyNameContainer title='会社名' label='正式名称'/>
         <CompanyNameContainer label='ふりがな'/>

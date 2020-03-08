@@ -1,11 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components';
 
-
-const H3 = <h3>{name}</h3>;
-
-export default function h3Tag () {
+export default function h3Tag (props) {
   return (
-    <H3 name={this.props.name}/>
+    <H3>{props.name}</H3>
   )
 }
 
+h3Tag.propTypes = {
+  name: PropTypes.string
+}
+
+const H3 = styled.h3`
+  font-size: 18px;
+  color: #2D2D2D;
+`
