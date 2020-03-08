@@ -8,7 +8,7 @@ import RadioBtn from '../Atoms/input/radioBtn'
 export default function RadioField (props) {
   return (
     <Wrapper>
-      <H3 name={props.name} />
+      <RadioFieldH3 name={props.name} />
       <RadioBtn label={props.label}/>
     </Wrapper>
   )
@@ -16,9 +16,15 @@ export default function RadioField (props) {
 
 RadioField.propTypes = {
   name: PropTypes.string,
-  label: PropTypes.array
+  label: PropTypes.array,
+  className: PropTypes.string
 }
 
 const Wrapper = styled.div`
+  display: flex;
   padding: 8px 10px;
+`
+const RadioFieldH3 = styled(H3)`
+  color: tomato;
+  border-color: tomato;
 `
