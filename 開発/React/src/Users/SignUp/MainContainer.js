@@ -11,7 +11,6 @@ import PassWordInputContainer from './PassWordInputContainer'
 import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
 import PostCodeInputContainer from './PostCodeInputContainer'
-import AddressInputContainer from './AddressInputContainer'
 import PhoneNumberInputContainer from './PhoneNumberInputContainer'
 
 const useStyles = makeStyles({
@@ -41,22 +40,20 @@ export default function SimpleCard () {
           <div className='contents-title-area'>
             <h3 className='contents-title'>基本情報</h3>
           </div>
-          {/* -------------氏名入力------------- */}
+          {/* --------------氏名入力---------------- */}
           <NameInputContainer />
-          {/* -------------氏名（かな）入力------------- */}
+          {/* -------------氏名（かな）入力------------ */}
           <NameKanaInputContainer />
-          {/* -------------メールアドレス入力------------- */}
+          {/* -----------メールアドレス入力------------ */}
           <MailInputContainer />
           {/* -------------パスワード入力------------- */}
           <PassWordInputContainer />
-          {/* -------------性別入力------------- */}
+          {/* ---------------性別入力--------------- */}
           <GenderSelectContainer />
           {/* -------------生年月日入力------------- */}
           <BirthdayInputContainer />
-          {/* -------------郵便番号入力------------- */}
+          {/* ---------------住所入力--------------- */}
           <PostCodeInputContainer />
-          {/* -------------住所入力------------- */}
-          <AddressInputContainer />
           {/* -------------電話番号入力------------- */}
           <PhoneNumberInputContainer />
         </div>

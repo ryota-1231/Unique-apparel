@@ -1,3 +1,6 @@
+var webpack = require('webpack')
+const Dotenv = require('dotenv-webpack')
+
 module.exports = {
   entry: {
     app: './src/index.js'
@@ -27,5 +30,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }]
-  }
+  },
+  plugins: [
+    new Dotenv('./.env')
+  ]
 }
