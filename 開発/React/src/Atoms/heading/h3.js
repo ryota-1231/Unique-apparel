@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-export default function h3Tag (props) {
+export default function h3 (props) {
   return (
-    <H3 className={props.className}>{props.name}</H3>
+    <H3 className={props.className}>{props.title}</H3>
   )
 }
 
-h3Tag.propTypes = {
-  name: PropTypes.string,
+h3.propTypes = {
+  title: PropTypes.string,
   className: PropTypes.string
 }
 
