@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import ItemIndex from './Items/index/main'
+import ItemSearch from './Items/search/main'
 import './reset.css'
 
 // import OrderComplete from './Orders/complete/main'
@@ -12,6 +12,6 @@ ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
-    <ItemIndex />,
+    <ItemSearch />,
   document.getElementById('root')
 )
