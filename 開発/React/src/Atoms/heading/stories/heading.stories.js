@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default {
   title: 'heading',
   component: h3Tag
-};
+}
 
 export function h3Tag () {
   return (
@@ -19,20 +19,7 @@ const H3 = styled.h3`
 
 h3Tag.story = {
   name: 'h3'
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 // import React from 'react';
 

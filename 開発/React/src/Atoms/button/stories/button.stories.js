@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 export default {
   title: 'Welcome',
   component: h3Tag
-};
+}
 
 export function h3Tag () {
   return (
@@ -12,6 +12,5 @@ export function h3Tag () {
 }
 
 h3Tag.story = {
-  name: ' LikeButton',
-};
-
+  name: ' LikeButton'
+}

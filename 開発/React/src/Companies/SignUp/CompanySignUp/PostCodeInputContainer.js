@@ -15,9 +15,8 @@ class PostCodeInputContainer extends React.Component {
   }
 }
 
-PostCodeInputContainer .propTypes = {
-  title: PropTypes.string,
+PostCodeInputContainer.propTypes = {
+  title: PropTypes.string
 }
-
 
 export default PostCodeInputContainer

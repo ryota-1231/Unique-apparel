@@ -35,7 +35,7 @@ export default function SimpleCard () {
             <div id='check-list-area'>
               <h3 className='check-list-title'>※ご確認事項※</h3>
               <p className='check-list-description'>
-                ・内裏での出品申込は承ることができません。出店希望者ご自身でお申込みください。<br></br>
+                ・内裏での出品申込は承ることができません。出店希望者ご自身でお申込みください。<br />
                 ・本フォームの入力が完了した時点では、契約の成立にはなりません。
               </p>
             </div>
@@ -60,7 +60,7 @@ export default function SimpleCard () {
           <ShopSignUp />
         </CardContent>
       </Card>
-       {/* -------------登録ボタンエリア------------- */}
+      {/* -------------登録ボタンエリア------------- */}
       <CardActions id='signup-btn-area'>
         <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
       </CardActions>

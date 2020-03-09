@@ -7,10 +7,10 @@ class NameInputContainer extends React.Component {
     return (
       <div className='name-area'>
         <div className='name-title-area'>
-    <h4 className='name-title'>{this.props.title}</h4>
+          <h4 className='name-title'>{this.props.title}</h4>
         </div>
         <div className='name-field'>
-          <NameTextField leftLabel={this.props.leftLabel} rightLabel={this.props.rightLabel}/>
+          <NameTextField leftLabel={this.props.leftLabel} rightLabel={this.props.rightLabel} />
         </div>
       </div>
     )

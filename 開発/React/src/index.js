@@ -12,7 +12,7 @@ ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
-    // <ItemIndex />,
-    <CompaniesSignUp />,
+  // <ItemIndex />,
+  <CompaniesSignUp />,
   document.getElementById('root')
 )

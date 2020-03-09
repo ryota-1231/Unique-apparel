@@ -7,7 +7,7 @@ class PhoneNumberInputContainer extends React.Component {
     return (
       <div className='phone-number-area'>
         <div className='phone-number-title-area'>
-    <h4 className='phone-number-title'>{this.props.label}</h4>
+          <h4 className='phone-number-title'>{this.props.label}</h4>
         </div>
         <PhoneNumberTextField />
       </div>

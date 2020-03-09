@@ -6,8 +6,8 @@ class NameTextField extends React.Component {
   render () {
     return (
       <form id='name-form' noValidate autoComplete='off'>
-        <TextField id='family-name' label={this.props.leftLabel} variant='outlined' size='small'/>
-        <TextField id='family-name' label={this.props.rightLabel}  variant='outlined' size='small'/>
+        <TextField id='family-name' label={this.props.leftLabel} variant='outlined' size='small' />
+        <TextField id='family-name' label={this.props.rightLabel} variant='outlined' size='small' />
       </form>
     )
   }
@@ -21,4 +21,3 @@ NameTextField.propTypes = {
 }
 
 export default NameTextField
-

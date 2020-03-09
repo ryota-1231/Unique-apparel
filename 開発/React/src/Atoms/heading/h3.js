@@ -1,15 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export default function h3Tag (props) {
   return (
-    <H3>{props.name}</H3>
+    <H3 className={props.className}>{props.name}</H3>
   )
 }
 
 h3Tag.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
+  className: PropTypes.string
 }
 
 const H3 = styled.h3`

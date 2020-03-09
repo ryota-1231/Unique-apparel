@@ -10,7 +10,7 @@ class CompanyNameContainer extends React.Component {
           <h4 className='company-name-title'>{this.props.title}</h4>
         </div>
         <div className='text-area'>
-          <CompanyNameText label={this.props.label}/>
+          <CompanyNameText label={this.props.label} />
         </div>
       </div>
     )
