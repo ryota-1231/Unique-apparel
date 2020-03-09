@@ -7,11 +7,16 @@ import './reset.css'
 // import UsersSignUp from './Users/SignUp/main'
 // import UsersLogin from './Users/Login/main'
 import ListingNew from './Items/listings/main'
+// import Purchase from './Items/purchase/main'
+// import ItemComplete from './Items/complete/main'
+
 ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
   // <ItemIndex />,
   <ListingNew />,
+  // <Purchase />,
+  // <ItemComplete />,
   document.getElementById('root')
 )
