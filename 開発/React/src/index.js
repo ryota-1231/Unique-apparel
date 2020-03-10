@@ -6,7 +6,6 @@ import './reset.css'
 // import OrderComplete from './Orders/complete/main'
 // import UsersSignUp from './Users/SignUp/main'
 // import UsersLogin from './Users/Login/main'
-
 // import Purchase from './Items/purchase/main'
 import ItemComplete from './Items/complete/main'
 
