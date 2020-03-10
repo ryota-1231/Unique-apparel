@@ -7,8 +7,8 @@ class TextFieldContainer extends React.Component {
     return (
       <div className='form-area'>
         <form className='text-form' noValidate autoComplete='off'>
-          <TextField id='Outlined-company-id' label='Company ID' variant="outlined" />
-          <TextField id='Outlined-password' label='PassWord' variant="outlined" />
+          <TextField id='Outlined-company-id' label='Company ID' variant='outlined' />
+          <TextField id='Outlined-password' label='PassWord' variant='outlined' />
         </form>
       </div>
     )
