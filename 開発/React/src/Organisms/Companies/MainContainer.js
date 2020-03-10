@@ -1,11 +1,14 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
+// import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
+import Link from '@material-ui/core/Link'
 import Button from '@material-ui/core/Button'
-import CompanySignUp from './CompanySignUp'
-import ShopSignUp from './ShopSignUp'
+import H2 from '../../Atoms/heading/h2'
+import H3 from '../../Atoms/heading/h3'
+import Border from '../../Atoms/border/border'
+import { Container } from '@material-ui/core'
 
 const useStyles = makeStyles({
   root: {
@@ -29,41 +32,52 @@ export default function SimpleCard () {
 
   return (
     <div className='company-signup-wrapper'>
+      <Card className={classes.root}>
+        <CardContent>
+          {/* -------------会社登録情報エリア------------- */}
+          <Container>
+             <H2 title='会員登録情報' />
+          <Border />
+          <H3 title='基本情報' />
+          <p>男性<br></br>1990/12/12生まれ<br></br>〒123-1234<br></br>東京都渋谷区</p>
+          </Container>
+          <Border />
+          <Container>
+            <H3 title='メールアドレス' />
+            <p>sample@example.com</p>
+          </Container>
+          <Border />
+          <Container>
+            <H3 title='パスワード' />
+            <p>********</p>
+            <p>※セキュリティ保護のためパスワードは非表示になっています。</p>
+          </Container>
+          <Border />
+        </CardContent>
+      </Card> 
       <Card id='signup-area' className={classes.root}>
         <CardContent>
-          <div className='contents'>
-            <div id='check-list-area'>
-              <h3 className='check-list-title'>※ご確認事項※</h3>
-              <p className='check-list-description'>
-                ・内裏での出品申込は承ることができません。出店希望者ご自身でお申込みください。<br />
-                ・本フォームの入力が完了した時点では、契約の成立にはなりません。
-              </p>
-            </div>
-          </div>
+          {/* -------------お届け先の変更・追加エリア------------- */}
+          <Container>
+            <H2 title='お届け先の変更・追加' />
+            <Border />
+            <p>追加したお届け先はありません。</p>
+            <Link href='#'>お届け先を追加する</Link>
+          </Container>
         </CardContent>
       </Card>
-      <div className='contents-title-area'>
-        <h3 className='contents-title'>会社情報</h3>
-      </div>
-      <Card id='signup-area' className={classes.root}>
+      {/* -------------クレジットカードエリア------------- */}
+      <Card>
         <CardContent>
-          {/* -------------会社登録エリア------------- */}
-          <CompanySignUp />
+          <Container>
+            <H2 title='クレジットカード情報の変更' />
+            <Border />
+            <p>クレジット情報登録はありません。</p>
+            <Link href='#'>クレジット情報を登録する</Link>
+          </Container>
         </CardContent>
-      </Card>
-      <div className='contents-title-area'>
-        <h3 className='contents-title'>店舗運営責任者</h3>
-      </div>
-      <Card id='signup-area' className={classes.root}>
-        <CardContent>
-          {/* -------------店舗登録エリア------------- */}
-          <ShopSignUp />
-        </CardContent>
-      </Card>
-      {/* -------------登録ボタンエリア------------- */}
-      <CardActions id='signup-btn-area'>
         <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
-      </CardActions>
+      </Card>
     </div>
   )
 }
