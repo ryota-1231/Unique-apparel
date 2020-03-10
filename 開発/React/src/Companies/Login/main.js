@@ -23,7 +23,7 @@ class CompanyLogin extends React.Component {
   }
 }
 
- {/* -------------propsのバリデーション------------- */}
+{ /* -------------propsのバリデーション------------- */ }
 // UsersLogin.propTypes = {
 //   add: PropTypes.func.isRequired
 // }
