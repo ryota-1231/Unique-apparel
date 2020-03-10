@@ -8,7 +8,7 @@ export default function TextArea (props) {
   return (
     <Wrapper>
       <TitleH3 title={props.title} />
-      <TextBox label={props.label} size={props.size}/>
+      <TextBox label={props.label} size={props.size} helper={props.helper} />
     </Wrapper>
   )
 }
@@ -17,7 +17,8 @@ TextArea.propTypes = {
   title: PropTypes.string,
   label: PropTypes.array,
   className: PropTypes.string,
-  size: PropTypes.string
+  size: PropTypes.string,
+  helper: PropTypes.string
 }
 
 const Wrapper = styled.div`

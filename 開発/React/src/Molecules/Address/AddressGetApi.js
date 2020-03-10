@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import axios from 'axios'
 import PostCode from './PostCode'
-import AddressTextField from './AddressTextField'
+import Address from './Address'
 
 // Google Map Api
 const GEOCODE_ENDPOINT = 'https://maps.googleapis.com/maps/api/geocode/json'
@@ -46,15 +47,13 @@ class AddressGetApi extends React.Component {
 
   render () {
     return (
-      <div id='address-field'>
-        <PostCode
-          submitAddress={this.submitAddress}
-        />
-        <AddressTextField
+      <Wrapper>
+        <PostCode submitAddress={this.submitAddress} />
+        <Address
           prefectures={this.state.prefectures}
           city={this.state.city}
         />
-      </div>
+      </Wrapper>
     )
   }
 }
@@ -63,5 +62,10 @@ AddressGetApi.propTypes = {
   postCode: PropTypes.string,
   address: PropTypes.string
 }
+
+const Wrapper = styled.div`
+padding: 8px 10px;
+
+`
 
 export default AddressGetApi

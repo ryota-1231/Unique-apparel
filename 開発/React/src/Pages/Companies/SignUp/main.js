@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.css'
-import MainContainer from './MainContainer'
+import MainContainer from '../../../Organisms/Companies/MainContainer'
 
 class CompaniesSignUp extends React.Component {
   render () {

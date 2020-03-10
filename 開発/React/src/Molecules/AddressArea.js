@@ -2,21 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import H3 from '../Atoms/heading/h3'
-import RadioBtn from '../Atoms/input/radioBtn'
+import AddressGetApi from './Address/AddressGetApi'
 
-export default function RadioArea (props) {
+export default function AddressArea (props) {
   return (
     <Wrapper>
       <TitleH3 title={props.title} />
-      <RadioBtn label={props.label} />
+      <AddressGetApi />
     </Wrapper>
   )
 }
 
-RadioArea.propTypes = {
-  title: PropTypes.string,
-  label: PropTypes.array,
-  className: PropTypes.string
+AddressArea.propTypes = {
+  title: PropTypes.string
 }
 
 const Wrapper = styled.div`
@@ -24,7 +22,6 @@ const Wrapper = styled.div`
   padding: 8px 10px;
 `
 const TitleH3 = styled(H3)`
-  line-height: 42px;
+  line-height: 56px;
   width: 200px;
-  margin-right: 10px;
 `

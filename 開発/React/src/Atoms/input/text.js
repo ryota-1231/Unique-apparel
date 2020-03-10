@@ -5,13 +5,14 @@ import TextField from '@material-ui/core/TextField'
 
 export default function Text (props) {
   const labels = props.label
-  const text = labels.map((label) => 
+  const text = labels.map((label) =>
     <TextField
       key={label}
-      className={props.className}  
-      label={label} 
-      size={props.size} 
-      variant='outlined' 
+      className={props.className}
+      label={label}
+      size={props.size}
+      helperText={props.helper}
+      variant='outlined'
     />
   )
   return (
@@ -25,6 +26,7 @@ Text.propTypes = {
   label: PropTypes.array,
   className: PropTypes.string,
   size: PropTypes.string,
+  helper: PropTypes.string
 }
 
 const TextForm = styled.form`
