@@ -6,7 +6,8 @@ export default function Btn (props) {
   return (
     <Button 
       variant="outlined" 
-      color="primary">
+      color="primary"
+      className={props.className}>
       {props.btn}</Button>
     
   )
@@ -14,5 +15,6 @@ export default function Btn (props) {
 
 Btn.propTypes = {
   btn: PropTypes.string,
+  className: PropTypes.string
 }
 

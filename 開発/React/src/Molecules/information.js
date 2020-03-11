@@ -11,7 +11,7 @@ export default function BtnTag (props) {
       <TitleH3 title={props.title} />
       <Container>
         <Description description={props.description} />
-        <Btn btn={props.btn} />
+        <EditBtn btn={props.btn} />
       </Container>
     </Wrapper>
   )
@@ -33,4 +33,15 @@ const TitleH3 = styled(H3)`
 `
 const Container = styled.div`
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`
+
+const EditBtn = styled(Btn)`
+  display: block;
+  width: 45px;
+  height: 35px;
+  padding: 5px 8px !important;
+  line-height: 25px !important;
 `
