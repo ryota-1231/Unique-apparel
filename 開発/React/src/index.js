@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+import ItemSearch from './Items/search/main'
 // import ItemIndex from './Items/index/main'
 import './reset.css'
 // import OrderComplete from './Orders/complete/main'
@@ -15,9 +16,10 @@ ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
+    <ItemSearch />,
   // <ItemIndex />,
   // <ListingNew />,
-  <ListingEdit />,
+  // <ListingEdit />,
   // <Purchase />,
   // <ItemComplete />,
   document.getElementById('root')
