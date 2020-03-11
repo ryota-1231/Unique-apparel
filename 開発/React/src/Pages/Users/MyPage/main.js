@@ -1,9 +1,9 @@
 import React from 'react'
 import './main.css'
 import H1 from '../../../Atoms/heading/h1'
-import MainContainer from '../../../Organisms/Companies/MainContainer'
+import MainContainer from '../../../Organisms/Users/MainContainer'
 
-class CompaniesSignUp extends React.Component {
+class UsersMyPage extends React.Component {
   render () {
     return (
       <div id='user-signup-wrapper'>
@@ -14,4 +14,4 @@ class CompaniesSignUp extends React.Component {
   }
 }
 
-export default CompaniesSignUp
+export default UsersMyPage
