@@ -1,0 +1,17 @@
+.contents {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main-contents h1 {
+  font-size: 32px;
+}
+
+.button-block {
+  margin: 16px;
+  font-size: 24px;
+}
+
+.btn {
+  width: 300px;
+}
