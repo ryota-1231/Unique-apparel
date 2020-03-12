@@ -34,9 +34,9 @@ export default function SimpleCard () {
         <CardContent>
           {/* -------------会社登録情報エリア------------- */}
           <Container>
-             <H2 title='会員登録情報' />
+            <H2 title='会員登録情報' />
             <Border />
-            <Information title='基本情報' btn='変更' description={['男性','1900/12/12生まれ', '〒123-1234', '渋谷']} />
+            <Information title='基本情報' btn='変更' description={['男性', '1900/12/12生まれ', '〒123-1234', '渋谷']} />
           </Container>
           <Border />
           <Container>
@@ -48,7 +48,7 @@ export default function SimpleCard () {
           </Container>
           <Border />
         </CardContent>
-      </Card> 
+      </Card>
       <Card id='signup-area' className={classes.root}>
         <CardContent>
           {/* -------------お届け先の変更・追加エリア------------- */}

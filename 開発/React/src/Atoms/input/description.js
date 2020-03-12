@@ -8,7 +8,8 @@ export default function p (props) {
     <TextDescription
       key={description}
       className={props.className}
-    >{description}</TextDescription>
+    >{description}
+    </TextDescription>
   )
   return (
     <Container>
