@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+
 // import ItemSearch from './Items/search/main'
 import ItemIndex from './Items/index/main'
+
 import './reset.css'
 // import OrderComplete from './Orders/complete/main'
 // import UsersSignUp from './Users/SignUp/main'
@@ -18,6 +20,7 @@ ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
+
     // <ItemSearch />,
   <ItemIndex />,
   // <ListingNew />,
@@ -26,5 +29,6 @@ ReactDOM.render(
   // <ItemComplete />,
   // <CompaniesSignUp />,
   // <UsersMyPage />,
+
   document.getElementById('root')
 )
