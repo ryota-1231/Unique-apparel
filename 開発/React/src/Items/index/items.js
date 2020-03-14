@@ -6,17 +6,18 @@ class Items extends React.Component {
     return (
       <div className='items'>
         {this.props.itemData.map((item) =>
-          <Item item={item} key={item.name + item.price} />)}
+          <Item item={item} key={item.id} />)}
       </div>
     )
   }
 }
 
 const Item = (props) => {
-  const { name, price, image } = props.item
+  const { name, price, images } = props.item
+  const url = `/static/images/${images[0].image_url}`
   return (
     <div className='item'>
-      <Link href='#'><img src={image} className='item-image' alt='アイコン' /></Link>
+      <Link href='#'><img src={ url } className='item-image' alt='アイコン' /></Link>
       <p>{name}</p>
       <p>¥{price}</p>
     </div>
