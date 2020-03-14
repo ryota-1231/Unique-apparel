@@ -23,7 +23,7 @@ export default function Text (props) {
 }
 
 Text.propTypes = {
-  label: PropTypes.array,
+  label: PropTypes.string,
   className: PropTypes.string,
   size: PropTypes.string,
   helper: PropTypes.string

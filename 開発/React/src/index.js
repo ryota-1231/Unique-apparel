@@ -11,6 +11,8 @@ import './reset.css'
 import ListingEdit from './Items/listings/mainEdit'
 // import Purchase from './Items/purchase/main'
 // import ItemComplete from './Items/complete/main'
+// import CompaniesSignUp from './Pages/Companies/SignUp/main'
+import UsersMyPage from './Pages/Users/MyPage/main'
 
 ReactDOM.render(
   // <UsersSignUp />,
@@ -22,5 +24,7 @@ ReactDOM.render(
   // <ListingEdit />,
   // <Purchase />,
   // <ItemComplete />,
+  // <CompaniesSignUp />,
+  <UsersMyPage />,
   document.getElementById('root')
 )
