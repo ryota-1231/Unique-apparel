@@ -4,6 +4,7 @@ import Link from '@material-ui/core/Link'
 import SignInContainer from './SignInContainer'
 import InterFaceContainer from './InterFaceContainer'
 import SignUpContainer from './SignUpContainer'
+import {Link as PageLink} from "react-router-dom";
 
 class MainContainer extends React.Component {
   render () {
@@ -18,7 +19,7 @@ class MainContainer extends React.Component {
           </div>
           <div className='content-right'>
             {/* -------------サインアップエリア------------- */}
-            <SignUpContainer />
+            <PageLink to='/page1'><SignUpContainer /></PageLink>
           </div>
         </div>
         <Link href='#' className='company-page-link'>Are you a Company?</Link>
