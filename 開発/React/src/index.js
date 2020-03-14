@@ -7,7 +7,8 @@ import './reset.css'
 // import UsersSignUp from './Users/SignUp/main'
 // import UsersLogin from './Users/Login/main'
 // import ListingNew from './Items/listings/main'
-import ListingEdit from './Items/listings/mainEdit'
+// import ListingEdit from './Items/listings/mainEdit'
+import ItemDetail from './Items/show'
 // import Purchase from './Items/purchase/main'
 // import ItemComplete from './Items/complete/main'
 
@@ -17,7 +18,8 @@ ReactDOM.render(
   // <OrderComplete />,
   // <ItemIndex />,
   // <ListingNew />,
-  <ListingEdit />,
+  // <ListingEdit />,
+  <ItemDetail />,
   // <Purchase />,
   // <ItemComplete />,
   document.getElementById('root')
