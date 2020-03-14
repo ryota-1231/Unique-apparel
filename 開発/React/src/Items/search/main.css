@@ -1,0 +1,70 @@
+.contents {
+  text-align: center;
+}
+
+
+/* トップ画像 */
+.main-image {
+  margin-top: 100px;
+  width: 80%;
+  height: 200px;
+}
+
+/* メイン部分 */
+.main-contents {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 100px 0;
+}
+
+/* サイドバー */
+.sidebar {
+  width: 15%;
+}
+
+.sidebar h1, h2 {
+  text-align: left;
+  width: 200px;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+#price-range {
+  margin-top: 16px;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-top: 40px;
+}
+
+/* 商品一覧 */
+.items {
+  width: 75%;
+  display: flex;
+  flex-wrap : wrap;
+}
+
+.item {
+  width: 25%;
+  margin: 8px 0;
+}
+
+.item p {
+  margin: 8px 0;
+}
+
+.item-image {
+  width: 80%;
+}

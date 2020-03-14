@@ -4,8 +4,8 @@ import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Button from '@material-ui/core/Button'
-import CompanySignUp from './CompanySignUp'
-import ShopSignUp from './ShopSignUp'
+import CompanySignUp from '../Users/CompanySignUp'
+import ShopSignUp from '../Users/ShopSignUp'
 
 const useStyles = makeStyles({
   root: {
