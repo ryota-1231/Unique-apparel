@@ -1,27 +1,115 @@
-.MuiTextField-root{
+/* .MuiTextField-root{
   
-}
-.contents {
-  text-align: center;
-}
-
-
+} */
 /* トップ画像 */
 
+* {
+  box-sizing: border-box;
+}
+
 .main-image {
+  background-image: url(/static/images/main.jpg);
+  background-size: cover;
   margin-top: 100px;
-  width: 80%;
-  height: 200px;
+  width: 100%;
+  height: 960px;
+}
+
+/* コンセプト */
+.concept {
+  margin-top: 200px;
+  text-align: center;
 }
 
 /* メイン部分 */
 
-.main-contents {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.main {
   margin-top: 100px;
+  text-align: center;
+  width: 100%;
 }
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  margin-top:15px;
+}
+.mens-category {
+  display: flex;
+  justify-content: flex-start;
+  width: 48%;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing:border-box;
+  /* align-items:center; */
+}
+.women-category {
+  display: flex;
+  justify-content: flex-start;
+  width: 48%;
+  flex-wrap: wrap;
+  position: relative;
+  /* align-items:center; */
+}
+.kids-category {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  flex-wrap: wrap;
+  position: relative;
+  /* align-items:center; */
+}
+.kids-category {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  flex-wrap: wrap;
+  position: relative;
+  /* align-items:center; */
+}
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap : wrap; */
+}
+.item {
+  width: 24%;
+  /* margin: 8px; */
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top:8px;
+  /* flex-wrap : wrap; */
+}
+.login-item {
+  width: 49%;
+  /* margin: 8px; */
+  /* position:relative; */
+}
+.login-title {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 100px;
+}
+.item2 {
+  width: 24%;
+  /* margin: 8px; */
+}
+
+.main h2 {
+  margin-bottom: 30px;
+}
+
+/* メンズカテゴリ */
 
 /* サイドバー */
 
@@ -29,26 +117,7 @@
   border-bottom: 1px solid;
 }
 
-.sidebar {
-  width: 15%;
-}
-
 /* 商品一覧 */
-
-.items {
-  width: 75%;
-  display: flex;
-  flex-wrap : wrap;
-}
-
-.item {
-  width: 25%;
-  margin: 8px 0;
-}
-
-.item p {
-  margin: 8px 0;
-}
 
 .item-image {
   width: 80%;

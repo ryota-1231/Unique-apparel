@@ -16,7 +16,8 @@ export default function BasicTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="outlined-basic" label="Sarch" variant="outlined" />
+      <TextField id="outlined-basic" label="Search" variant="outlined" />
     </form>
   );
 }
+
