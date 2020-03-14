@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @item = Item.all
-    render json: @item
+    @items = Item.all
+    render json: @items.to_json(include: { images: { only: [:image_url] } })
   end
 end
