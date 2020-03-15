@@ -18,7 +18,7 @@ export default function DisplayArea (props) {
 }
 
 DisplayArea.propTypes = {
-  title: PropTypes.title,
+  title: PropTypes.string,
   description: PropTypes.array
 }
 
