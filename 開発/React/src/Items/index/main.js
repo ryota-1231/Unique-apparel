@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './main.css'
 import MenuListComposition from './sidebar'
 import Items from './items.js'
+import Header from '../../header';
 
 class ItemIndex extends Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class ItemIndex extends Component {
     return (
       <div className='contents'>
         {/* ここにヘッダーがある予定 */}
+        <Header />
         <img src='/static/images/購入完了画面.png' className='main-image' />
         <div className='main-contents'>
           {/* サイドバーコンポーネントの呼び出し */}
