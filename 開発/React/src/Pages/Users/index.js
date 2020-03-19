@@ -14,9 +14,9 @@ export default function index () {
     return (
       <Router>
         <Switch>
-          <Route exact path='/' component={UsersLogin}/>
-          <Route path='/page1' component={UsersSignUp}/>
-          <Route component={UsersLogin}/>
+          <Route exact path='/' component={UsersLogin}></Route>
+          <Route path='/page1' component={UsersSignUp}></Route>
+          <Route component={UsersLogin}></Route>
         </Switch>
       </Router>
     )

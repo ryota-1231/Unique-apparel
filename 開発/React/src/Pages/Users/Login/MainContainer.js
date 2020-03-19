@@ -1,9 +1,10 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-import Link from '@material-ui/core/Link'
+import PropTypes from 'prop-types'
+// import Link from '@material-ui/core/Link'
 import SignInContainer from './SignInContainer'
 import InterFaceContainer from './InterFaceContainer'
 import SignUpContainer from './SignUpContainer'
+import { Link } from "react-router-dom";
 
 class MainContainer extends React.Component {
   render () {
@@ -11,6 +12,7 @@ class MainContainer extends React.Component {
       <div id='user-login-wrapper'>
         <div className='contents'>
           <div className='content-left'>
+          {this.props.children}
             {/* -------------サインインエリア------------- */}
             <SignInContainer />
             {/* -------------外部連携ボタン------------- */}
@@ -18,17 +20,17 @@ class MainContainer extends React.Component {
           </div>
           <div className='content-right'>
             {/* -------------サインアップエリア------------- */}
-            <SignUpContainer />
+            <Link to="page1"><SignUpContainer /></Link>
           </div>
         </div>
-        <Link href='#' className='company-page-link'>Are you a Company?</Link>
+        {/* <Link href='#' className='company-page-link'>Are you a Company?</Link> */}
       </div>
     )
   }
 }
 
-// UsersLogin.propTypes = {
-//   add: PropTypes.func.isRequired
-// }
+MainContainer.propTypes = {
+  children: PropTypes.string
+}
 
 export default MainContainer
