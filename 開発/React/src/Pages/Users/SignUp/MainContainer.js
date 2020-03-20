@@ -12,16 +12,10 @@ import GenderSelectContainer from './GenderSelectContainer'
 import BirthdayInputContainer from './BirthdayInputContainer'
 import PostCodeInputContainer from './PostCodeInputContainer'
 import PhoneNumberInputContainer from './PhoneNumberInputContainer'
-import { Link, withRouter } from "react-router-dom";
-import PropTypes from 'prop-types'
-
+import { Link  as RouteLink} from "react-router-dom";
 
 
 class MainContainer extends React.Component {
-  navigate() {
-    console.log(this.props.history);
-    this.props.history.push("page1");
-  }
   render () {
   return (
     
@@ -31,7 +25,6 @@ class MainContainer extends React.Component {
           <div className='contents-title-area'>
             <h3 className='contents-title'>基本情報</h3>
           </div>
-          <p>{this.props.parameter}</p>
           {/* --------------氏名入力---------------- */}
           <NameInputContainer />
           {/* -------------氏名（かな）入力------------ */}
@@ -51,19 +44,13 @@ class MainContainer extends React.Component {
         </div>
       </CardContent>
       <CardActions id='signup-btn-area'>
-        {this.props.children}
-        <Button variant='contained' color='primary' size='large' id='user-register-btn'><Link to="page2" onClick={this.navigate.bind(this)}>会員登録する</Link></Button>
+        <RouteLink to="page2" >
+          <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
+        </RouteLink>
       </CardActions>
     </Card>
     )
   }
 }
 
-MainContainer.propTypes = {
-  children: PropTypes.string,
-  history: PropTypes.object,
-  match: PropTypes.object,
-  parameter: PropTypes.object
-}
-
-export default withRouter(MainContainer);
+export default MainContainer;
