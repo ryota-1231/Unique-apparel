@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+// import ItemSearch from './Items/search/main'
+// import ItemIndex from './Items/index/main'
 
 // import ItemSearch from './Items/search/main'
-import ItemIndex from './Items/index/main'
+// import ItemIndex from './Items/index/main'
+
 
 import './reset.css'
 // import OrderComplete from './Orders/complete/main'
@@ -11,6 +14,7 @@ import './reset.css'
 // import UsersLogin from './Users/Login/main'
 // import ListingNew from './Items/listings/main'
 // import ListingEdit from './Items/listings/mainEdit'
+import ItemDetail from './Items/show'
 // import Purchase from './Items/purchase/main'
 // import ItemComplete from './Items/complete/main'
 // import CompaniesSignUp from './Pages/Companies/SignUp/main'
@@ -20,11 +24,14 @@ ReactDOM.render(
   // <UsersSignUp />,
 //   <UsersLogin />,
   // <OrderComplete />,
+    // <ItemSearch />,
+  // <ItemIndex />,
 
     // <ItemSearch />,
-  <ItemIndex />,
+  // <ItemIndex />,
   // <ListingNew />,
   // <ListingEdit />,
+  <ItemDetail />,
   // <Purchase />,
   // <ItemComplete />,
   // <CompaniesSignUp />,
