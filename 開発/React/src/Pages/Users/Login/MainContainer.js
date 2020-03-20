@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '@material-ui/core/Link'
+// import Link from '@material-ui/core/Link'
 import SignInContainer from './SignInContainer'
 import InterFaceContainer from './InterFaceContainer'
 import SignUpContainer from './SignUpContainer'
@@ -21,7 +21,7 @@ class MainContainer extends React.Component {
             <RouteLink to="/page1"><SignUpContainer/></RouteLink>
           </div>
         </div>
-        <Link href='#' className='company-page-link'>Are you a Company?</Link>
+        <RouteLink to="/page3">Are you a Company?</RouteLink>
       </div>
     )
   }
