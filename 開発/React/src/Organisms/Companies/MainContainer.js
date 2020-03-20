@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
+import Button from '../../Atoms/button/button'
 import CompanySignUp from '../Users/CompanySignUp'
 import ShopSignUp from '../Users/ShopSignUp'
 
@@ -62,7 +62,7 @@ export default function SimpleCard () {
       </Card>
       {/* -------------登録ボタンエリア------------- */}
       <CardActions id='signup-btn-area'>
-        <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
+        <Button type={'contained'} value={'会員登録する'} color={'primary'} />
       </CardActions>
     </div>
   )

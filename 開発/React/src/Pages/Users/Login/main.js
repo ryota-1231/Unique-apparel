@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.css'
-import MainContainer from './MainContainer'
+import MainContainer from '../../../Organisms/Users/Login/MainContainer'
 
 class UsersLogin extends React.Component {
   render () {

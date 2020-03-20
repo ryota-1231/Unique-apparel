@@ -19,6 +19,11 @@ html{
   TODO test putting a class on HEAD.
     - Fails on FF.
 */
+
+*{
+  box-sizing: border-box;
+}
+
 body,
 div,
 dl,

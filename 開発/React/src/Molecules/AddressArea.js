@@ -17,6 +17,9 @@ AddressArea.propTypes = {
   title: PropTypes.string
 }
 
+const Wrapper = styled.div`
+`
+
 const TitleH3 = styled(H3)`
   line-height: 56px;
   width: 200px;

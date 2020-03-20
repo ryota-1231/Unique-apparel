@@ -26,7 +26,7 @@ class Items extends React.Component {
 // }
 
 Items.propTypes = {
-  itemData: PropTypes.string,
+  itemData: PropTypes.array,
   item: PropTypes.object,
   name:PropTypes.string,
   props: PropTypes.object

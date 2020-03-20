@@ -3,7 +3,7 @@ import React from 'react'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
+import Button from '../../../Atoms/button/button'
 import NameInputContainer from './NameInputContainer'
 import NameKanaInputContainer from './NameKanaInputContainer'
 import MailInputContainer from './MailInputContainer'
@@ -45,7 +45,7 @@ class MainContainer extends React.Component {
       </CardContent>
       <CardActions id='signup-btn-area'>
         <RouteLink to="/user-mypage" >
-          <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
+          <Button type={'contained'} value={'会員登録する'} color={'primary'} />
         </RouteLink>
       </CardActions>
     </Card>
