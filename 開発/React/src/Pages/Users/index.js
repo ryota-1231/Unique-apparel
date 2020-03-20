@@ -2,12 +2,8 @@ import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import UsersLogin from './Login/main'
 import UsersSignUp from './SignUp/main'
+import UsersMyPage from './MyPage/main'
 
-
-// const topPage = () => <UsersLogin />
-// const signUp = () => <UsersSignUp />
-// const page2 = () => <div><h1>page2</h1>2枚目のページです</div>
-// const page3 = () => <div><h1>page3</h1>3枚目のページです</div>
 
 export default function index () {
 
@@ -15,7 +11,9 @@ export default function index () {
       <Router>
         <Switch>
           <Route exact path='/' component={UsersLogin}></Route>
-          <Route path='/page1' component={UsersSignUp}></Route>
+          <Route exact path='/page1' component={UsersSignUp}></Route>
+          <Route exact path='/page1/:id' component={UsersSignUp}></Route>
+          <Route exact path='/page2' component={UsersMyPage}></Route>
           <Route component={UsersLogin}></Route>
         </Switch>
       </Router>

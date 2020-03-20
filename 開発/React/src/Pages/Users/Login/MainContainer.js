@@ -4,9 +4,13 @@ import PropTypes from 'prop-types'
 import SignInContainer from './SignInContainer'
 import InterFaceContainer from './InterFaceContainer'
 import SignUpContainer from './SignUpContainer'
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class MainContainer extends React.Component {
+  navigate() {
+    console.log(this.props.history);
+    this.props.history.push("/");
+  }
   render () {
     return (
       <div id='user-login-wrapper'>
@@ -20,7 +24,7 @@ class MainContainer extends React.Component {
           </div>
           <div className='content-right'>
             {/* -------------サインアップエリア------------- */}
-            <Link to="page1"><SignUpContainer /></Link>
+            <Link to="page1/:id" onClick={this.navigate.bind(this)}><SignUpContainer/></Link>
           </div>
         </div>
         {/* <Link href='#' className='company-page-link'>Are you a Company?</Link> */}
@@ -30,7 +34,9 @@ class MainContainer extends React.Component {
 }
 
 MainContainer.propTypes = {
-  children: PropTypes.string
+  children: PropTypes.string,
+  history: PropTypes.object,
+  match: PropTypes.object
 }
 
-export default MainContainer
+export default withRouter(MainContainer);
