@@ -12,6 +12,7 @@ class TopPages extends Component {
     return(
       <div className = 'container'>
       <div className = 'header'>
+        
         {/* サーチコンポーネントの呼び出し */}
           <BasicTextFields/>
           

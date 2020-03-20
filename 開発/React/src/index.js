@@ -12,32 +12,32 @@ import './reset.css'
 // import UsersLogin from './Pages/Users/Login/main'
 // import ListingNew from './Items/listings/main'
 // import ListingEdit from './Items/listings/mainEdit'
-import ItemDetail from './Items/show'
+// import ItemDetail from './Items/show'
 // import Purchase from './Items/purchase/main'
 // import ItemComplete from './Items/complete/main'
 // import CompaniesSignUp from './Pages/Companies/SignUp/main'
 // import UsersMyPage from './Pages/Users/MyPage/main'
-// import App from './App'
-import UsersIndex from './Pages/Users/index'
+import App from './App'
+// import UsersIndex from './Pages/Users/index'
+// import TopPage from './TopPages/Index/main'
 
 
 ReactDOM.render(
   // <UsersSignUp />,
-  <UsersIndex/>,
+  // <UsersIndex/>,
   // <OrderComplete />,
-    // <ItemSearch />,
+  // <ItemSearch />,
   // <ItemIndex />,
-
-    // <ItemSearch />,
+  // <ItemSearch />,
   // <ItemIndex />,
   // <ListingNew />,
   // <ListingEdit />,
-  <ItemDetail />,
+  // <ItemDetail />,
   // <Purchase />,
   // <ItemComplete />,
   // <CompaniesSignUp />,
   // <UsersMyPage />,
-  // <App />,
+  <App />,
   document.getElementById('root')
 )
 

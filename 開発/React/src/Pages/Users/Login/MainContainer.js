@@ -18,7 +18,7 @@ class MainContainer extends React.Component {
           </div>
           <div className='content-right'>
             {/* -------------サインアップエリア------------- */}
-            <RouteLink to="/page1"><SignUpContainer/></RouteLink>
+            <RouteLink to="/user-signup"><SignUpContainer/></RouteLink>
           </div>
         </div>
         <RouteLink to="/page3">Are you a Company?</RouteLink>

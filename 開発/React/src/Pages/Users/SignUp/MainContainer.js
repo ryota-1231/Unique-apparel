@@ -44,7 +44,7 @@ class MainContainer extends React.Component {
         </div>
       </CardContent>
       <CardActions id='signup-btn-area'>
-        <RouteLink to="page2" >
+        <RouteLink to="/user-mypage" >
           <Button variant='contained' color='primary' size='large' id='user-register-btn'>会員登録する</Button>
         </RouteLink>
       </CardActions>

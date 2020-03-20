@@ -1,11 +1,11 @@
 import React from 'react'
-import UsersIndex from './Pages/Users/index'
+import TopPageIndex from './Pages/index'
 
 function App () {
   return (
     <div className='App'>
       <header className='App-header'>
-        <UsersIndex />
+        <TopPageIndex />
       </header>
     </div>
   )

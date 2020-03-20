@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import H2 from '../../Atoms/heading/h2'
-import H3 from '../../Atoms/heading/h3'
+import H2 from '../../../Atoms/heading/h2'
+import H3 from '../../../Atoms/heading/h3'
 
 export default function ItemPrice () {
   return (
