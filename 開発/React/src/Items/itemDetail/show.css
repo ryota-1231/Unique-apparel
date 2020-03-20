@@ -4,13 +4,7 @@
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 30px;
-  margin: 20px 0;
-  /* text-align: center; */
-}
-
-article.item-detail-container  {
+section.item-detail-container  {
   display: flex;
   height: 600px;
 }
@@ -131,57 +125,17 @@ article.item-detail-container  {
   border: 1px solid #eee;
   border-bottom: none;
   border-radius: 4px;
-  height: 225px;
+  height: auto;
   width: auto;
   margin: 0 0 0 15px;
 }
 
-.info-space-container {
-  display: flex;
-  border-bottom: 1px solid #eee;
-}
-
-.listing-info-space-l {
-  width: 150px;
-  padding: 15px 15px;
-  background: #f5f5f5;
-}
-
-.listing-info-space-r {
-  padding: 15px 15px;
-}
-
-/* ------------------itemPrice.js------------------ */
-/* ⑥商品の値段⑦購入画面遷移ボタン */
-.item-price-container {
+/* ------------------material-uiスタイル------------------ */
+.buying-button {
   width: 900px;
-}
-.price-display {
-  display: flex;
-  height: 80px;
-  margin: 15px 0;
+  height: 60px;
 }
 
-.item-price {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.include-tax {
-  line-height: 80px;
-}
-
-/* ------------------itemDescription.js------------------ */
-.item-description-container > p {
-  padding: 15px 0;
-}
-
-.button-container {
-  border: 1px solid #eee;
-  padding: 10px;
-  border-radius: 50px;
-  background: #eee;
-}
-.inappropriate {
-  margin: 0 10px;
+#comment-input {
+  height: 100px;
 }
