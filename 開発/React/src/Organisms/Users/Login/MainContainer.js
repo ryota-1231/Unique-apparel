@@ -19,10 +19,10 @@ class MainContainer extends React.Component {
           </Content>
           <Content>
             {/* -------------サインアップエリア------------- */}
-            <RouteLink to="/user-signup"><SignUpContainer/></RouteLink>
+            <RouteLink to="/users/signup"><SignUpContainer/></RouteLink>
           </Content>
         </Container>
-        <RouteLink to="/company-login">Are you a Company?</RouteLink>
+        <RouteLink to="/companies/login">Are you a Company?</RouteLink>
       </Wrapper>
     )
   }

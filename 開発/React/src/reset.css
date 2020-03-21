@@ -20,10 +20,6 @@ html{
     - Fails on FF.
 */
 
-*{
-  box-sizing: border-box;
-}
-
 body,
 div,
 dl,

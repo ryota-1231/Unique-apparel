@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Link from '@material-ui/core/Link'
-import H2 from '../../Atoms/heading/h2'
-import Border from '../../Atoms/border/border'
-import Information from '../../Molecules/information'
+import H2 from '../../../Atoms/heading/h2'
+import Border from '../../../Atoms/border/border'
+import Information from '../../../Molecules/information'
 import { Container } from '@material-ui/core'
 
 const useStyles = makeStyles({

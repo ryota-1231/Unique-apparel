@@ -19,23 +19,23 @@ export default function index () {
           <div>
             <ul>
               <li><RouteLink to="/">TopPage</RouteLink></li>
-              <li><RouteLink to="/user-login">UsersLogin</RouteLink></li>
-              <li><RouteLink to="/user-signup">UsersSignUp</RouteLink></li>
-              <li><RouteLink to="/user-mypage">UsersMyPage</RouteLink></li>
-              <li><RouteLink to="/company-login">CompanyLogin</RouteLink></li>
-              <li><RouteLink to="/company-signup">CompanySignUp</RouteLink></li>
-              <li><RouteLink to="/item/index">ItemIndex</RouteLink></li>
+              <li><RouteLink to="/users/login">UsersLogin</RouteLink></li>
+              <li><RouteLink to="/users/signup">UsersSignUp</RouteLink></li>
+              <li><RouteLink to="/users/mypage">UsersMyPage</RouteLink></li>
+              <li><RouteLink to="/companies/login">CompanyLogin</RouteLink></li>
+              <li><RouteLink to="/companies/signup">CompanySignUp</RouteLink></li>
+              <li><RouteLink to="/items/index">ItemIndex</RouteLink></li>
 
             </ul>
           </div>
           <Switch>
             <Route exact path='/' component={TopPage}></Route>
-            <Route exact path='/user-login' component={UsersLogin}></Route>
-            <Route exact path='/user-signup' component={UsersSignUp}></Route>
-            <Route exact path='/user-mypage' component={UsersMyPage}></Route>
-            <Route exact path='/company-login' component={CompanyLogin}></Route>
-            <Route exact path='/company-signup' component={CompanySignUp}></Route>
-            <Route exact path='/item/index' component={ItemIndex}></Route>
+            <Route exact path='/users/login' component={UsersLogin}></Route>
+            <Route exact path='/users/signup' component={UsersSignUp}></Route>
+            <Route exact path='/users/mypage' component={UsersMyPage}></Route>
+            <Route exact path='/companies/login' component={CompanyLogin}></Route>
+            <Route exact path='/companies/signup' component={CompanySignUp}></Route>
+            <Route exact path='/items/index' component={ItemIndex}></Route>
             {/* <Route exact path='/page3' component={CompanyLogin}></Route> */}
             <Route component={TopPage}></Route>
           </Switch>
