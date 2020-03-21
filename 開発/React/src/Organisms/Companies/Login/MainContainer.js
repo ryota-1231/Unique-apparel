@@ -6,6 +6,12 @@ import SignUpContainer from './SignUpContainer'
 
 
 class MainContainer extends React.Component {
+
+  componentWillUnmount() {
+    console.log('アンマウント！！')
+    clearInterval(this.props);
+  }
+  
   render () {
     return (
       <Wrapper>

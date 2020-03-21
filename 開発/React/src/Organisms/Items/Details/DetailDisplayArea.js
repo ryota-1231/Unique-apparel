@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import P from '../../Atoms/input/description'
-import H2 from '../../Atoms/heading/h2'
+import P from '../../../Atoms/input/description'
+import H2 from '../../../Atoms/heading/h2'
 
 export default function DisplayArea (props) {
   return (

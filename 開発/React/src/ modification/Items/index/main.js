@@ -38,11 +38,6 @@ class ItemIndex extends Component {
   //   })
   // }
 
-  componentWillUnmount() {
-    console.log('アンマウント！！')
-    clearInterval(this.props);
-  }
-
   render () {
     return (
       <div className='contents'>

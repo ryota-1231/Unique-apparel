@@ -6,6 +6,7 @@ import RadioArea from '../../../Molecules/RadioArea'
 import Border from '../../../Atoms/border/border'
 import styled from 'styled-components'
 
+
 class ShopSignUp extends React.Component {
   render () {
     return (

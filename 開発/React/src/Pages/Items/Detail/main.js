@@ -1,14 +1,14 @@
 import React from 'react'
-import MainContainer from '../../../Organisms/Users/MyPage/MainContainer'
+import MainContainer from '../../../Organisms/Items/Details/MainContainer'
 
 
-class UsersMyPage extends React.Component {
-
+class ItemDetails extends React.Component {
+  
   componentWillUnmount() {
     console.log('アンマウント！！')
     clearInterval(this.props);
   }
-  
+
   render () {
     return (
       <MainContainer />
@@ -16,4 +16,4 @@ class UsersMyPage extends React.Component {
   }
 }
 
-export default UsersMyPage
+export default ItemDetails

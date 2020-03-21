@@ -1,5 +1,5 @@
 import React from 'react'
-import DisplayArea from '../../../Organisms/ItemDetail/DetailDisplayArea'
+import DisplayArea from '../../../Organisms/Items/Details/DetailDisplayArea'
 
 export default function RightDetailArea () {
   return (

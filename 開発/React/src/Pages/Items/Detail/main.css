@@ -1,0 +1,141 @@
+/* ------------------全体のレイアウト------------------ */
+.main-contents {
+  width: 900px;
+  margin: 0 auto;
+}
+
+section.item-detail-container  {
+  display: flex;
+  height: 600px;
+}
+
+/* ------------------leftImageArea.js------------------ */
+/* ②商品画像 */
+.box_hoverimg ul {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  list-style: none;
+  position: relative;
+}
+.box_hoverimg li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 500px;
+}
+.box_hoverimg li div {
+  width: 500px;
+  height: 500px;
+  font-size: 2em;
+  line-height: 1.5;
+  vertical-align: middle;
+  display: table-cell;
+  word-break: break-word;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.box_hoverimg li span {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  bottom: -105px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  opacity: 0.5;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.box_hoverimg li span:hover {
+  opacity: 1;
+  z-index: 200;
+}
+.box_hoverimg li span:hover + div {
+  opacity: 1;
+  z-index: 100;
+}
+.box_hoverimg li:nth-child(1) div {
+  background: url("/static/images/購入商品画像1.png");
+  background-repeat: no-repeat;
+  color: black;
+  background-size:500px 500px;
+}
+.box_hoverimg li:nth-child(2) div {
+  background: url("/static/images/購入商品画像2.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-size:500px 500px;
+}
+.box_hoverimg li:nth-child(3) div {
+  background: url("/static/images/購入商品画像3.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-size:500px 500px;
+}
+.box_hoverimg li:nth-child(4) div {
+  background: url("/static/images/購入商品画像4.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-size:500px 500px;
+}
+.box_hoverimg li:nth-child(5) div {
+  background: url("/static/images/購入商品画像5.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-size:500px 500px;
+}
+.box_hoverimg li:nth-child(6) div {
+  background: url("/static/images/購入商品画像6.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-size:500px 500px;
+}
+.box_hoverimg li:nth-child(2) span {
+  background: url("/static/images/購入商品画像2.png");
+  background-size:100px 100px;
+  left: 0;
+}
+.box_hoverimg li:nth-child(3) span {
+  background: url("/static/images/購入商品画像3.png");
+  background-size:100px 100px;
+  left: 100px;
+}
+.box_hoverimg li:nth-child(4) span {
+  background: url("/static/images/購入商品画像4.png");
+  background-size:100px 100px;
+  left: 200px;
+}
+.box_hoverimg li:nth-child(5) span {
+  background: url("/static/images/購入商品画像5.png");
+  background-size:100px 100px;
+  left: 300px;
+}
+.box_hoverimg li:nth-child(6) span {
+  background: url("/static/images/購入商品画像6.png");
+  background-size:100px 100px;
+  left: 400px;
+}
+
+/* ------------------rightDetailArea.js------------------ */
+/* ③出品会社名④カテゴリー⑤商品サイズ */
+.item-detail-space {
+  border: 1px solid #eee;
+  border-bottom: none;
+  border-radius: 4px;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 15px;
+}
+
+/* ------------------material-uiスタイル------------------ */
+.buying-button {
+  width: 900px;
+  height: 60px;
+}
+
+#comment-input {
+  height: 100px;
+}

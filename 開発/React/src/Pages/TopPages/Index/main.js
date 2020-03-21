@@ -7,6 +7,12 @@ import Links from './category';
 
 
 class TopPages extends Component {
+
+  componentWillUnmount() {
+    console.log('アンマウント！！')
+    clearInterval(this.props);
+  }
+
   render () {
     
     return(
