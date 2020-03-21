@@ -1,13 +1,12 @@
 import React from 'react'
-// import Link from '@material-ui/core/Link'
-import PropTypes from 'prop-types'
+import Link from '@material-ui/core/Link'
 
 class Items extends React.Component {
   render () {
     return (
       <div className='items'>
-        {{this.props.itemData.map((item) =>
-          <Item item={item} key={item.id} />)}}
+        {this.props.itemData.map((item) =>
+          <Item item={item} key={item.id} />)}
       </div>
     )
   }
@@ -25,11 +24,5 @@ const Item = (props) => {
   )
 }
 
-Items.propTypes = {
-  itemData: PropTypes.array,
-  item: PropTypes.object,
-  name:PropTypes.string,
-  props: PropTypes.object
-}
 
 export default Items
