@@ -10,9 +10,7 @@ import CompanySignUp from '../Pages/Companies/SignUp/main'
 import ItemIndex from '../Pages/Items/index/main'
 
 
-
 export default function index () {
-
     return (
       <Wrapper>
         <Router>
@@ -42,9 +40,7 @@ export default function index () {
         </Router>
       </Wrapper>
     )
-
 }
-
 
 const Wrapper = styled.div`
 `
