@@ -18,7 +18,10 @@ import { Link  as RouteLink} from "react-router-dom";
 class MainContainer extends React.Component {
   render () {
   return (
-    
+    <div id='user-signup-wrapper'>
+    <div className='signup-title-area'>
+      <h2 className='signup-title'>新規会員登録</h2>
+    </div>
     <Card id='signup-area' >
       <CardContent>
         <div className='contents'>
@@ -49,6 +52,7 @@ class MainContainer extends React.Component {
         </RouteLink>
       </CardActions>
     </Card>
+    </div>
     )
   }
 }

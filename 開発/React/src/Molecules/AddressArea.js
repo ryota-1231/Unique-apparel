@@ -7,7 +7,7 @@ import AddressGetApi from './Address/AddressGetApi'
 export default function AddressArea (props) {
   return (
     <Wrapper>
-      <TitleH3 title={props.title} />
+      <Title title={props.title} />
       <AddressGetApi />
     </Wrapper>
   )
@@ -18,9 +18,12 @@ AddressArea.propTypes = {
 }
 
 const Wrapper = styled.div`
+  display: flex;
+  padding: 8px 10px;
 `
 
-const TitleH3 = styled(H3)`
+const Title = styled(H3)`
+  flex-shrink: 0;
   line-height: 56px;
-  width: 200px;
+  width: 200px !important;
 `

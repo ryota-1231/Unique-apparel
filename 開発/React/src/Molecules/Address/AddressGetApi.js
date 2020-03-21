@@ -48,7 +48,9 @@ class AddressGetApi extends React.Component {
   render () {
     return (
       <Wrapper>
+        {/* -------------------------郵便番号入力ラン------------------------- */}
         <PostCode submitAddress={this.submitAddress} />
+        {/* -------------------住所自動入力欄・テキストボックス------------------- */}
         <Address
           prefectures={this.state.prefectures}
           city={this.state.city}
