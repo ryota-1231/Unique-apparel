@@ -6,11 +6,11 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 library.add(fab, fas, far);
 import H1 from '../../Atoms/heading/h1'
-import LeftImageArea from './itemDetail/leftImageArea.js.js'
-import RightDetailArea from './itemDetail/rightDetailArea.js.js'
-import ItemPrice from './itemDetail/itemPrice.js.js'
-import ItemDescription from './itemDetail/itemDescription.js.js'
-import ButtonArea from './itemDetail/likeButton.js.js'
+import LeftImageArea from './itemDetail/leftImageArea'
+import RightDetailArea from './itemDetail/rightDetailArea'
+import ItemPrice from './itemDetail/itemPrice'
+import ItemDescription from './itemDetail/itemDescription'
+import ButtonArea from './itemDetail/likeButton'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import SocialButton from './itemDetail/socialButton'
