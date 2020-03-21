@@ -24,5 +24,4 @@ const Item = (props) => {
   )
 }
 
-
 export default Items
