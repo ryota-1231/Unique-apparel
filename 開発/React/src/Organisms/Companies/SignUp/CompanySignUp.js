@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import RadioField from '../../Molecules/RadioArea'
-import AddressArea from '../../Molecules/AddressArea'
-import Text from '../../Molecules/TextArea'
-import Border from '../../Atoms/border/border'
+import RadioField from '../../../Molecules/RadioArea'
+import AddressArea from '../../../Molecules/AddressArea'
+import Text from '../../../Molecules/TextArea'
+import Border from '../../../Atoms/border/border'
 
 
 class CompanySignUp extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react'
-import MainContainer from '../../../Organisms/Companies/MainContainer'
+import MainContainer from '../../../Organisms/Companies/SignUp/MainContainer'
 
 
 class CompaniesSignUp extends React.Component {

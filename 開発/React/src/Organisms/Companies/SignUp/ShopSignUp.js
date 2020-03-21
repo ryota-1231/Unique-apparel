@@ -1,9 +1,9 @@
 import React from 'react'
-import AddressArea from '../../Molecules/AddressArea'
-import Text from '../../Molecules/TextArea'
-import pTag from '../../Atoms/input/description'
-import RadioArea from '../../Molecules/RadioArea'
-import Border from '../../Atoms/border/border'
+import AddressArea from '../../../Molecules/AddressArea'
+import Text from '../../../Molecules/TextArea'
+import pTag from '../../../Atoms/input/description'
+import RadioArea from '../../../Molecules/RadioArea'
+import Border from '../../../Atoms/border/border'
 import styled from 'styled-components'
 
 class ShopSignUp extends React.Component {

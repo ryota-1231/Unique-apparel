@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
+import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
+import Button from '../../../Atoms/button/button'
 import H1 from '../../../Atoms/heading/h1'
-import Info from '../../../Organisms/Users/MyPage/UsersInfo'
-import Destination from '../../../Organisms/Users/MyPage/UsersDestination'
-import CreditCard from '../../../Organisms/Users/MyPage/CreditCard'
+import Info from '../../../Organisms/Users/SignUp/Info'
 
 
 const useStyles = makeStyles({
@@ -26,13 +26,12 @@ const useStyles = makeStyles({
   }
 })
 
-export default function SimpleCard () {
+export default function MainContainer () {
   const classes = useStyles()
 
   return (
     <Wrapper>
-      <H1 title='〇〇様  登録情報' />
-      {/* -------------会社登録情報エリア------------- */}
+      <H1 title='新規会員登録' />
       <Container>
         <Card className={classes.root}>
           <CardContent>
@@ -40,22 +39,9 @@ export default function SimpleCard () {
           </CardContent>
         </Card>
       </Container>
-      {/* -------------お届け先の変更・追加エリア------------- */}
-      <Container>
-        <Card className={classes.root}>
-          <CardContent>
-            <Destination />
-          </CardContent>
-        </Card>
-      </Container>
-      {/* -------------クレジットカードエリア------------- */}
-      <Container>
-        <Card className={classes.root}>
-          <CardContent>
-            <CreditCard />
-          </CardContent>
-        </Card>
-      </Container>
+      <CardActions >
+        <Btn type='contained' value='会員登録する' color='primary' />
+      </CardActions>
     </Wrapper>
   )
 }
@@ -67,4 +53,10 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   margin: 30px auto 60px;
+
+`
+
+const Btn = styled(Button)`
+  width: 300px;
+  margin: 0 auto !important;
 `

@@ -4,11 +4,11 @@ import { makeStyles} from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
-import Button from '../../Atoms/button/button'
-import H1 from '../../Atoms/heading/h1'
-import H2 from '../../Atoms/heading/h2'
-import H3 from '../../Atoms/heading/h2'
-import P from '../../Atoms/input/description'
+import Button from '../../../Atoms/button/button'
+import H1 from '../../../Atoms/heading/h1'
+import H2 from '../../../Atoms/heading/h2'
+import H3 from '../../../Atoms/heading/h2'
+import P from '../../../Atoms/input/description'
 import CompanySignUp from './CompanySignUp'
 import ShopSignUp from './ShopSignUp'
 
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   }
 })
 
-export default function SimpleCard () {
+export default function MainContainer () {
   const classes = useStyles()
 
   return (
