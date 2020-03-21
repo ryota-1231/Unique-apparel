@@ -24,4 +24,4 @@ const Item = (props) => {
   )
 }
 
-export default Items
+export default Items 

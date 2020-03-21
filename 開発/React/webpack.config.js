@@ -12,7 +12,8 @@ module.exports = {
   devServer: {
     contentBase: __dirname + '/public',
     port: 8080,
-    publicPath: '/js/'
+    publicPath: '/js/',
+    historyApiFallback: true 
   },
   devtool: 'eval-source-map',
   mode: 'development',

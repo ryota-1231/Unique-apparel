@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import OtherItem from '../itemDetail/image'
+import OtherItem from './image'
 
 export default function OtherListingItem() {
   const ImageLists = [

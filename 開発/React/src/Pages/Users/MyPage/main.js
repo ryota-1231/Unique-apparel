@@ -1,7 +1,8 @@
 import React from 'react'
 import './main.css'
 import H1 from '../../../Atoms/heading/h1'
-import MainContainer from '../../../Organisms/Users/MainContainer'
+import MainContainer from '../../../Organisms/Users/MyPage/MainContainer'
+
 
 class UsersMyPage extends React.Component {
   render () {

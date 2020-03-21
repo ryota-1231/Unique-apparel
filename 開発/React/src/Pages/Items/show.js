@@ -5,16 +5,16 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 library.add(fab, fas, far);
-import H1 from '../Atoms/heading/h1'
-import LeftImageArea from './itemDetail/leftImageArea.js'
-import RightDetailArea from './itemDetail/rightDetailArea.js'
-import ItemPrice from './itemDetail/itemPrice.js'
-import ItemDescription from './itemDetail/itemDescription.js'
-import ButtonArea from './itemDetail/likeButton.js'
+import H1 from '../../Atoms/heading/h1'
+import LeftImageArea from './itemDetail/leftImageArea'
+import RightDetailArea from './itemDetail/rightDetailArea'
+import ItemPrice from './itemDetail/itemPrice'
+import ItemDescription from './itemDetail/itemDescription'
+import ButtonArea from './itemDetail/likeButton'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import SocialButton from '../Items/itemDetail/socialButton'
-import OtherListingItem from '../Items/itemDetail/otherListingItem'
+import SocialButton from './itemDetail/socialButton'
+import OtherListingItem from './itemDetail/otherListingItem'
 
 class ItemDetail extends Component {
   render () {

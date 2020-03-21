@@ -1,7 +1,6 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 import './main.css'
-import MainContainer from './MainContainer'
+import MainContainer from '../../../Organisms/Users/Login/MainContainer'
 
 class UsersLogin extends React.Component {
   render () {
@@ -10,10 +9,5 @@ class UsersLogin extends React.Component {
     )
   }
 }
-
-/* -------------propsのバリデーション------------- */
-// UsersLogin.propTypes = {
-//   add: PropTypes.func.isRequired
-// }
 
 export default UsersLogin

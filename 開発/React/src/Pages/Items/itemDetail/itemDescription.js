@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import P from '../../Atoms/input/description'
+import P from '../../../Atoms/input/description'
 
 export default function ItemDescription () {
   return (

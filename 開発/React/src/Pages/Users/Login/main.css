@@ -1,104 +1,6 @@
-*{
-  box-sizing: border-box;
-}
-
-#user-login-wrapper{
-  width: 900px;
-  margin: 0 auto;
-}
-
-.contents {
-  width: 900px;
-  height: 630px;
-  display: flex;
-}
-
-/*------------------ content-left -----------------*/
-/*------------------ top-area -----------------*/
-.content-left{
-  width: 50%;
-  border: 1px solid #ddd;
-}
-
-.sign-in-top-area{
-  padding: 20px 30px 20px;
-}
-
-.sign-in-title{
-  text-align: center;
-  font-size: 30px;
-}
-
-/* -------------テキストボックス-------------*/
-.form-area{
-  width: 350px;
-  margin: 0 auto;
-}
-
-#standard-user-id, #standard-password{
-  display: block;
-  width: 350px;
-}
-
-/* -------------チェックボックス・ラベル-------------*/
-.check-area{
-  width: 350px;
-  margin: 30px auto;
-}
-
-#users-signin-button{
-  margin-left: 90px;
-}
-
-.forget-password{
-  text-align: center;
-}
-
-/*------------------ bottom-area -----------------*/
-/* -------------外部連携ボタン-------------*/
-.sign-in-bottom-area{
-  padding: 20px 50px 50px;
-  border-top: 0.5px solid #ddd;
-  position: relative;
-}
-
-.sign-in-bottom-area h2{
-  text-align: center;
-  font-size: 30px;
-  padding-bottom:  30px
-}
-
-#google-btn{
-  text-align: center;
-  display: block;
-  width: 350px;
-  margin: 0 auto 15px;
-}
-
-#instagram-btn{
-  text-align: center;
-  display: block;
-  width: 350px;
-  margin: 0 auto 15px;
-}
-
-#twitter-btn{
-  text-align: center;
-  display: block;
-  width: 350px;
-  margin: 0 auto 15px;
-}
-
-#facebook-btn{
-  text-align: center;
-  display: block;
-  width: 350px;
-}
-
 /*------------------ content-right ------------------*/
 .content-right{
   width: 50%;
-  background-color: rgb(255, 155, 230);
   text-align: center;
 }
 
@@ -106,25 +8,6 @@
   font-size: 30px;
 }
 
-.signup-title{
-  color: #fff;
-  font-size: 30px;
-}
-
-.contents h1 {
-  margin-top: 64px;
-}
-
-.form-sentence {
-  margin-bottom: 32px;
-}
-
 .forget-password{
-  display: block;
-}
-
-/*------------------ company-page-link ------------------*/
-.company-page-link{
-  display: inline-block;
-  margin-top: 20px !important;
+  padding: 10px;
 }
