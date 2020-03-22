@@ -1,17 +1,18 @@
 /* ------------------全体のレイアウト------------------ */
-.main-contents {
+/* .main-contents {
   width: 900px;
   margin: 0 auto;
-}
+} */
 
-section.item-detail-container  {
+/* section.item-detail-container  {
   display: flex;
   height: 600px;
-}
+} */
 
 /* ------------------leftImageArea.js------------------ */
 /* ②商品画像 */
-.box_hoverimg ul {
+
+/* .box_hoverimg ul {
   width: 500px;
   height: 500px;
   text-align: center;
@@ -117,25 +118,43 @@ section.item-detail-container  {
   background: url("/static/images/購入商品画像6.png");
   background-size:100px 100px;
   left: 400px;
-}
+} */
 
 /* ------------------rightDetailArea.js------------------ */
 /* ③出品会社名④カテゴリー⑤商品サイズ */
-.item-detail-space {
+/* .item-detail-space {
   border: 1px solid #eee;
   border-bottom: none;
   border-radius: 4px;
   height: auto;
   width: auto;
   margin: 0 0 0 15px;
-}
+} */
 
 /* ------------------material-uiスタイル------------------ */
-.buying-button {
+/* .buying-button {
   width: 900px;
   height: 60px;
-}
+} */
 
 #comment-input {
   height: 100px;
+
+  justify-content: space-between;
 }
+
+
+/* 不適切な商品　ボタン */
+/* 
+// const Button = styled.button`
+//   border: 1px solid #eee;
+//   border-radius: 50px;
+//   background: #eee;
+//   height: 40px;
+//   padding: 5px 15px;
+//   line-height: 15px;
+//   margin: 0 10px 0 0;
+//   &:hover {
+//     cursor: pointer;
+//   }
+// ` */

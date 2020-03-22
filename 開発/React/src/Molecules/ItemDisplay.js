@@ -1,23 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import P from '../../../Atoms/input/description'
-import H2 from '../../../Atoms/heading/h2'
+import P from '../Atoms/input/description'
+import H2 from '../Atoms/heading/h2'
 
-export default function DisplayArea (props) {
+export default function ItemDisplay (props) {
   return (
     <Wrapper>
       <ContainerLeft>
-        <TitleH2 title={props.title} />
+        <Title title={props.title} />
       </ContainerLeft>
       <ContainerRight>
-      <P description={props.description} />
+        <P description={props.description} />
       </ContainerRight>
     </Wrapper>
   )
 }
 
-DisplayArea.propTypes = {
+ItemDisplay.propTypes = {
   title: PropTypes.string,
   description: PropTypes.array
 }
@@ -35,6 +35,6 @@ const ContainerLeft = styled.div`
 const ContainerRight = styled.div`
   padding: 15px 15px;
 `
-const TitleH2 = styled(H2)`
+const Title = styled(H2)`
 font-size: 14px;
 `

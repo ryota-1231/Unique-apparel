@@ -5,17 +5,19 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
+import TextField from '@material-ui/core/TextField'
 library.add(fab, fas, far);
 import H1 from '../../../Atoms/heading/h1'
-import LeftImageArea from './leftImageArea'
-import RightDetailArea from './rightDetailArea'
-import ItemPrice from './itemPrice'
+import ImageDetails from '../../../Molecules/ImageDetails'
+import DetailDisplay from './DetailDisplay'
+import ItemPrice from '../../../Molecules/itemPrice'
 import ItemDescription from './itemDescription'
-import ButtonArea from './likeButton'
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
-import SocialButton from './socialButton'
+import LikeBtn from '../../../Atoms/input/likeButton'
+// import TextField from '@material-ui/core/TextField'
+import Button from '../../../Atoms/button/button'
+import SocialButton from '../../../Molecules/SNSButton'
 import OtherListingItem from './otherListingItem'
+
 
 class MainContainer extends Component {
   constructor(props) {
@@ -26,22 +28,23 @@ class MainContainer extends Component {
           id: 1,
           name: 'test商品1',
           price: '1000',
-          images: '/static/images/mens.jpg'
-        },
-        {
-          id: 2,
-          name: 'test商品2',
-          price: '2000',
-          images: '/static/images/mens.jpg'
-        },
-        {
-          id:3,
-          name: 'test商品3',
-          price: '3000',
-          images: '/static/images/mens.jpg'
+          images: [
+            '/static/images/mens.jpg',
+            '/static/images/mens.jpg',
+            '/static/images/mens.jpg',
+            '/static/images/mens.jpg',
+            '/static/images/mens.jpg',
+            '/static/images/mens.jpg',
+          ]
         }
       ]
     }
+  }
+
+  componentWillUnmount() {
+    console.log('アンマウント！！')
+    clearInterval(this.props);
+    clearInterval(this.state);
   }
 
   render () {
@@ -50,20 +53,22 @@ class MainContainer extends Component {
         {/* ここにロゴを配置する */}
           {/* ①商品名 */}
           <H1 title='お買い得商品！'/>
-          <section className='item-detail-container'>
+          <Container>
             {/* ②商品画像 */}
-            <LeftImageArea />
+            <ImageDetails items={this.state.items[0]} />
             {/* ③出品会社名④カテゴリー⑤商品サイズ */}
-            <RightDetailArea />
-          </section>
+            <DetailDisplay />
+          </Container>
           {/* ⑥商品の値段 */}
-          <ItemPrice/>
+          <ItemPrice price={this.state.items[0].price}/>
           {/* ⑦購入画面遷移ボタン */}
-          <Button variant='contained' color='secondary' className='buying-button'>購入画面に進む</Button>
+          <Btn type='contained' color='secondary' value='購入画面に進む'/>
           {/* ⑧商品説明 */}
           <ItemDescription />
           {/* ⑨いいねボタン */}
-          <ButtonArea />
+          <Content>
+             <LikeBtn />
+          </Content>
           {/* ⑩コメント */}
           <TextField id='comment-input' label='コメント' fullWidth variant='outlined' />
           {/* ⑪SNS */}
@@ -83,6 +88,20 @@ MainContainer.propTypes = {
 const Wrapper = styled.div`
   width: 900px;
   margin: 0 auto;
+`
+
+const Container = styled.section`
+  display: flex;
+  justify-content: space-between;
+`
+
+const Content = styled.div`
+  text-align: right;
+`
+
+const Btn = styled(Button)`
+  width: 100%;
+  height: 60px;
 `
 
 export default MainContainer
