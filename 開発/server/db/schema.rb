@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2020_03_14_073806) do
 
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -31,5 +32,4 @@ ActiveRecord::Schema.define(version: 2020_03_14_073806) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
 end

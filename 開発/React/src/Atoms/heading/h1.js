@@ -15,5 +15,6 @@ h1.propTypes = {
 
 const H1 = styled.h1`
   font-size: 30px;
+  padding: 8px 10px;
   color: #2D2D2D;
 `

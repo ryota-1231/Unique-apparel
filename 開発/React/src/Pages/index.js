@@ -1,0 +1,46 @@
+import React from 'react'
+import {BrowserRouter as Router, Link as RouteLink, Switch, Route} from "react-router-dom";
+import styled from 'styled-components'
+import TopPage from '../Pages/TopPages/Index/main'
+import UsersLogin from '../Pages/Users/Login/main'
+import UsersSignUp from '../Pages/Users/SignUp/main'
+import UsersMyPage from '../Pages/Users/MyPage/main'
+import CompanyLogin from '../Pages/Companies/Login/main'
+import CompanySignUp from '../Pages/Companies/SignUp/main'
+import ItemIndex from '../Pages/Items/index/main'
+
+
+export default function index () {
+    return (
+      <Wrapper>
+        <Router>
+          <div>
+            <ul>
+              <li><RouteLink to="/">TopPage</RouteLink></li>
+              <li><RouteLink to="/users/login">UsersLogin</RouteLink></li>
+              <li><RouteLink to="/users/signup">UsersSignUp</RouteLink></li>
+              <li><RouteLink to="/users/mypage">UsersMyPage</RouteLink></li>
+              <li><RouteLink to="/companies/login">CompanyLogin</RouteLink></li>
+              <li><RouteLink to="/companies/signup">CompanySignUp</RouteLink></li>
+              <li><RouteLink to="/items/index">ItemIndex</RouteLink></li>
+
+            </ul>
+          </div>
+          <Switch>
+            <Route exact path='/' component={TopPage}></Route>
+            <Route exact path='/users/login' component={UsersLogin}></Route>
+            <Route exact path='/users/signup' component={UsersSignUp}></Route>
+            <Route exact path='/users/mypage' component={UsersMyPage}></Route>
+            <Route exact path='/companies/login' component={CompanyLogin}></Route>
+            <Route exact path='/companies/signup' component={CompanySignUp}></Route>
+            <Route exact path='/items/index' component={ItemIndex}></Route>
+            {/* <Route exact path='/page3' component={CompanyLogin}></Route> */}
+            <Route component={TopPage}></Route>
+          </Switch>
+        </Router>
+      </Wrapper>
+    )
+}
+
+const Wrapper = styled.div`
+`

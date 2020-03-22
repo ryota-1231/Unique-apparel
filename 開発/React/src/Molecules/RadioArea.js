@@ -7,7 +7,7 @@ import RadioBtn from '../Atoms/input/radioBtn'
 export default function RadioArea (props) {
   return (
     <Wrapper>
-      <TitleH3 title={props.title} />
+      <Title title={props.title} />
       <RadioBtn label={props.label} />
     </Wrapper>
   )
@@ -23,7 +23,8 @@ const Wrapper = styled.div`
   display: flex;
   padding: 8px 10px;
 `
-const TitleH3 = styled(H3)`
+const Title = styled(H3)`
+  flex-shrink: 0;
   line-height: 42px;
   width: 200px;
   margin-right: 10px;

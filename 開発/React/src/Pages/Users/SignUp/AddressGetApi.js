@@ -47,11 +47,11 @@ class AddressGetApi extends React.Component {
   render () {
     return (
       <div id='address-field'>
-//    --------------------郵便番号入力--------------------
+    {/* --------------------郵便番号入力-------------------- */}
         <PostCode
           submitAddress={this.submitAddress}
         />
-//    --------------------住所自動入力--------------------
+    {/* --------------------住所自動入力-------------------- */}
         <AddressTextField
           prefectures={this.state.prefectures}
           city={this.state.city}
