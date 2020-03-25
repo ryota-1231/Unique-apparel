@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './main.css'
 import MenuListComposition from './sidebar'
-import Items from './items'
+import Items from '../../../Molecules/items'
 
 class ItemIndex extends Component {
   constructor(props) {

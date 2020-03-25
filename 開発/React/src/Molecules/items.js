@@ -23,11 +23,9 @@ class Items extends React.Component {
 
 const Item = (props) => {
   const { name, price, images } = props.item
-  // const url = `/static/images/${images[0].image_url}`
   const url = `${images}`
   return (
     <div className='item'>
-      {/* <Link href='#'><img src={ url } className='item-image' alt='アイコン' /></Link> */}
       <img src={ url } className='item-image' alt='アイコン' />
       <p>{name}</p>
       <p>¥{price}</p>
