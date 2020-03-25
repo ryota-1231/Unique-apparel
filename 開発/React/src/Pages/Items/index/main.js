@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import './main.css'
 import MenuListComposition from './sidebar'
 import Items from './items.js'
-import Header from '../../Template/header';
-import Footer from '../../Template/footer';
+import Header from '../../../Template/header';
+import Footer from '../../../Template/footer';
 
 class ItemIndex extends Component {
   constructor(props) {
