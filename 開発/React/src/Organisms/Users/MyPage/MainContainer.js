@@ -1,12 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
-import Link from '@material-ui/core/Link'
-import H2 from '../../../Atoms/heading/h2'
-import Border from '../../../Atoms/border/border'
-import Information from '../../../Molecules/information'
-import { Container } from '@material-ui/core'
+import H1 from '../../../Atoms/heading/h1'
+import Info from '../../../Organisms/Users/MyPage/UsersInfo'
+import Destination from '../../../Organisms/Users/MyPage/UsersDestination'
+import CreditCard from '../../../Organisms/Users/MyPage/CreditCard'
+
 
 const useStyles = makeStyles({
   root: {
@@ -29,50 +30,41 @@ export default function SimpleCard () {
   const classes = useStyles()
 
   return (
-    <div className='company-signup-wrapper'>
-      <Card className={classes.root}>
-        <CardContent>
-          {/* -------------会社登録情報エリア------------- */}
-          <Container>
-            <H2 title='会員登録情報' />
-          </Container>
-            <Border />
-          <Container>
-            <Information title='基本情報' value='変更' description={['男性', '1900/12/12生まれ', '〒123-1234', '渋谷']} />
-          </Container>
-          <Border />
-          <Container>
-            <Information title='メールアドレス' value='変更' description={['sample@example.com']} />
-          </Container>
-          <Border />
-          <Container>
-            <Information title='パスワード' value='変更' description={['********', '※ セキュリティのためパスワードは非表示となっています。']} />
-          </Container>
-          <Border />
-        </CardContent>
-      </Card>
-      <Card id='signup-area' className={classes.root}>
-        <CardContent>
-          {/* -------------お届け先の変更・追加エリア------------- */}
-          <Container>
-            <H2 title='お届け先の変更・追加' />
-            <Border />
-            <Information value='変更' description={['追加したお届け先はありません。']} />
-            <Link href='#'>お届け先を追加する</Link>
-          </Container>
-        </CardContent>
-      </Card>
+    <Wrapper>
+      <H1 title='〇〇様  登録情報' />
+      {/* -------------会社登録情報エリア------------- */}
+      <Container>
+        <Card className={classes.root}>
+          <CardContent>
+            <Info />
+          </CardContent>
+        </Card>
+      </Container>
+      {/* -------------お届け先の変更・追加エリア------------- */}
+      <Container>
+        <Card className={classes.root}>
+          <CardContent>
+            <Destination />
+          </CardContent>
+        </Card>
+      </Container>
       {/* -------------クレジットカードエリア------------- */}
-      <Card>
-        <CardContent>
-          <Container>
-            <H2 title='クレジットカード情報の変更' />
-            <Border />
-            <Information value='変更' description={['クレジット情報登録はありません。']} />
-            <Link href='#'>クレジット情報を登録する</Link>
-          </Container>
-        </CardContent>
-      </Card>
-    </div>
+      <Container>
+        <Card className={classes.root}>
+          <CardContent>
+            <CreditCard />
+          </CardContent>
+        </Card>
+      </Container>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  width: 900px;
+  margin: 0 auto;
+`
+
+const Container = styled.div`
+  margin: 30px auto 60px;
+`

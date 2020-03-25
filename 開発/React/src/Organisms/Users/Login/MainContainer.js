@@ -1,4 +1,5 @@
 import React from 'react'
+import './main.css'
 import { Link as RouteLink} from "react-router-dom";
 import styled from 'styled-components'
 import SignInContainer from './SignInContainer'
@@ -7,6 +8,12 @@ import SignUpContainer from './SignUpContainer'
 
 
 class MainContainer extends React.Component {
+
+  componentWillUnmount() {
+    console.log('アンマウント！！')
+    clearInterval(this.props);
+  }
+  
   render () {
     return (
       <Wrapper>
