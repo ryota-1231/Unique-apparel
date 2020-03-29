@@ -9,8 +9,11 @@ import CompanyLogin from '../Pages/Companies/Login/main'
 import CompanySignUp from '../Pages/Companies/SignUp/main'
 import ItemIndex from '../Pages/Items/index/main'
 import ItemShow from '../Pages/Items/Detail/main'
+import Purchase from '../Pages/Items/purchase/main'
+import Complete from '../Pages/Orders/complete/main'
 import Header from '../Templates/header';
 import Footer from '../Templates/footer';
+
 
 
 export default function index () {
@@ -27,6 +30,8 @@ export default function index () {
               <li><RouteLink to="/companies/signup">CompanySignUp</RouteLink></li>
               <li><RouteLink to="/items/index">ItemIndex</RouteLink></li>
               <li><RouteLink to="/items/show/:id">ItemShow</RouteLink></li>
+              <li><RouteLink to="/items/purchase">Purchase</RouteLink></li>
+              <li><RouteLink to="/items/complete">OrderComplete</RouteLink></li>
             </ul>
           </div>
           <Header />
@@ -39,6 +44,8 @@ export default function index () {
             <Route exact path='/companies/signup' component={CompanySignUp}></Route>
             <Route exact path='/items/index' component={ItemIndex}></Route>
             <Route path='/items/show/:id' component={ItemShow}></Route>
+            <Route path='/items/purchase' component={Purchase}></Route>
+            <Route path='/items/complete' component={Complete}></Route>
             <Route component={TopPage}></Route>
           </Switch>
           <Footer />

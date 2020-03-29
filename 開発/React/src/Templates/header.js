@@ -100,7 +100,9 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>プロフィール</MenuItem>
+      <RouteLink to="/users/mypage">
+        <MenuItem onClick={handleMenuClose}>プロフィール</MenuItem>
+      </RouteLink>
       <MenuItem onClick={handleMenuClose}>ログアウト</MenuItem>
     </Menu>
   );
