@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link as RouteLink} from "react-router-dom";
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -10,7 +11,6 @@ import Menu from '@material-ui/core/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link'
 import './header-footer.css'
 
 const useStyles = makeStyles(theme => ({
@@ -129,8 +129,10 @@ export default function Header() {
           {/* 将来的にはユーザーがログインしているかどうかで表示内容を分岐させる */}
           {/* ログインしていない時 */}
           <div>
-            <Link href='#'><Button variant="contained" color="secondary" id="sign_up_btn">新規登録</Button></Link>
-            <Link href='#'><Button variant="contained" id="login_btn">ログイン</Button></Link>
+          <RouteLink to="/users/signup">
+            <Button variant="contained" color="secondary" id="sign_up_btn">新規登録</Button>
+          </RouteLink>
+            <RouteLink to="/users/login"><Button variant="contained" id="login_btn">ログイン</Button></RouteLink>
           </div>
           {/* ログインしている時 */}
           <div className={classes.sectionDesktop}>

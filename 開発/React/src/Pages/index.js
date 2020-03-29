@@ -8,7 +8,9 @@ import UsersMyPage from '../Pages/Users/MyPage/main'
 import CompanyLogin from '../Pages/Companies/Login/main'
 import CompanySignUp from '../Pages/Companies/SignUp/main'
 import ItemIndex from '../Pages/Items/index/main'
-import ItemShow from './Items/Detail/main'
+import ItemShow from '../Pages/Items/Detail/main'
+import Header from '../Templates/header';
+import Footer from '../Templates/footer';
 
 
 export default function index () {
@@ -27,6 +29,7 @@ export default function index () {
               <li><RouteLink to="/items/show/:id">ItemShow</RouteLink></li>
             </ul>
           </div>
+          <Header />
           <Switch>
             <Route exact path='/' component={TopPage}></Route>
             <Route exact path='/users/login' component={UsersLogin}></Route>
@@ -36,9 +39,9 @@ export default function index () {
             <Route exact path='/companies/signup' component={CompanySignUp}></Route>
             <Route exact path='/items/index' component={ItemIndex}></Route>
             <Route path='/items/show/:id' component={ItemShow}></Route>
-            {/* <Route exact path='/page3' component={CompanyLogin}></Route> */}
             <Route component={TopPage}></Route>
           </Switch>
+          <Footer />
         </Router>
       </Wrapper>
     )
