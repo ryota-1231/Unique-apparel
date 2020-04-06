@@ -1,0 +1,99 @@
+/* /-----------------main.js(全体のレイアウト)-------------------/ */
+.contents {
+  display: flex;
+  justify-content: center;
+}
+
+.aside_of_your_personal_information, .aside_of_your_order {
+  width: 800px;
+  height: auto;
+}
+
+/* 注文内容の確認 */
+h1 {
+  font-size: 30px;
+  margin: 15px 0 20px 0;
+}
+
+/* 詳細設計_購入ページ_画面項目定義①〜③・⑬ */
+.your_order_confirmation,.your_order_item, .payment_section_area, .sipping_fee_area, .purchase_total_area {
+  justify-content: space-between;
+  padding: 15px 0;
+  display: flex;
+  border-top: solid 1px #eee;
+}
+
+/* ⑫の表示エリア */
+.side {
+  margin: 15px 0 20px 20px;
+}
+
+/* /-----------------change_button.js-------------------/ */
+/* ⑦⑧⑩⑪変更ボタンをborderとborderの真ん中する為のエリア */
+.change_button_area {
+  line-height: 80px;
+}
+
+/* material-uiボタンの高さを変更 */
+Button {
+  line-height: 40px;
+  height: 40px;
+}
+
+/* /-----------------aside_top.js-------------------/ */
+/* ③クーポンセクションの下線 */
+.section_bottom {
+  border-bottom: solid 1px #eee;
+}
+
+/* お届けの商品 */
+h2 {
+  margin: 20px 0 15px 0;
+  font-size: 24px;
+}
+
+/* ①お届け先②支払い方法③クーポン⑥送料 */
+h3 {
+  line-height: 80px;
+}
+
+/* pタグ要素をborderとborderの真ん中に配置 */
+.payment_type, .payment_amount {
+  line-height: 80px;
+}
+
+/* /-----------------aside_bottom.js-------------------/ */
+/* ⑤商品の表示エリア */
+/* ToDoレイアウトの修正必要 */
+.section_image_area {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #eee;
+}
+
+.item_image_area {
+  display: flex;
+  margin: 30px 0 30px 0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+/* /-----------------side_area.js-------------------/ */
+/* 購入確定するボタンのレイアウト */
+.purchase_button {
+  width: 200px;
+  height: 60px;
+}
+
+/* 金額表示エリア */
+.each_price {
+  padding: 2.5px 0;
+}
+
+/* 合計金額表示エリア */
+.total_amount, .total_price {
+  padding: 10px 0 30px 0;
+}
