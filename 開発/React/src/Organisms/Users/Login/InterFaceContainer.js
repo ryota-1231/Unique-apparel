@@ -3,15 +3,14 @@ import H1 from '../../../Atoms/heading/h1'
 import Button from '../../../Atoms/button/button'
 import styled from 'styled-components'
 
-
 export default function InterFaceContainer () {
   return (
     <Wrapper>
-      <Title title={'SNS Sign In'} />
-      <Btn type={'outlined'} value={'Google Account'}  />
-      <Btn type={'outlined'} color={'secondary'} value={'Instagram Account'} />
-      <Btn type={'outlined'} color={'primary'} value={'Twitter Account'} />
-      <Btn type={'outlined'} color={'primary'} value={'Facebook Account'} />
+      <Title title='SNS Sign In' />
+      <Btn type='outlined' value='Google Account' />
+      <Btn type='outlined' color='secondary' value='Instagram Account' />
+      <Btn type='outlined' color='primary' value='Twitter Account' />
+      <Btn type='outlined' color='primary' value='Facebook Account' />
     </Wrapper>
   )
 }

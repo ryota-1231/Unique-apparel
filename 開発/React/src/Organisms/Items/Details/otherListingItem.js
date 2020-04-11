@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import OtherItem from './image'
 
-export default function OtherListingItem() {
+export default function OtherListingItem () {
   const ImageLists = [
     {
       name: 'すみっこ1',
@@ -24,7 +24,7 @@ export default function OtherListingItem() {
       price: '¥1,500',
       image: '/static/images/購入商品画像4.png'
     }
-  ];
+  ]
 
   return (
     <Container>
@@ -33,16 +33,16 @@ export default function OtherListingItem() {
         {ImageLists.map((Item, index) => {
           return (
             <OtherItem
-              key = {index}
-              name = {Item.name}
-              price = {Item.price}
-              image = {Item.image}
+              key={index}
+              name={Item.name}
+              price={Item.price}
+              image={Item.image}
             />
           )
         })}
       </ItemsSection>
     </Container>
-  );
+  )
 }
 
 const Container = styled.div`

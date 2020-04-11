@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 export default function OtherItem (props) {
   return (
-      <ItemSection>
-        <Img src={props.image} />
-        <h2>{props.name}</h2>
-        <H3>{props.price}</H3>
-      </ItemSection>
+    <ItemSection>
+      <Img src={props.image} />
+      <h2>{props.name}</h2>
+      <H3>{props.price}</H3>
+    </ItemSection>
   )
 }
 

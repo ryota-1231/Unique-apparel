@@ -1,8 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import Pagination from '@material-ui/lab/Pagination'
 
-// ToDo サーバ側と連動してページネーションできるようにする
 const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {
@@ -11,13 +11,16 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export default function BasicPagination () {
+export default function PaginationSize (props) {
   const classes = useStyles()
 
   return (
-    // ⑦page送りボタン
-    <div className={classes.root}>
-      <Pagination count={10} color='primary' />
+    <div className={classes.root + ' ' + props.className}>
+      <Pagination count={5} size='large' />
     </div>
   )
+}
+
+PaginationSize.propTypes = {
+  className: PropTypes.string
 }

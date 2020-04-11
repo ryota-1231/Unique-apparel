@@ -4,7 +4,7 @@ import MenuListComposition from './sidebar'
 import Items from './items'
 
 class ItemIndex extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       items: [
@@ -21,7 +21,7 @@ class ItemIndex extends Component {
           images: '/static/images/mens.jpg'
         },
         {
-          id:3,
+          id: 3,
           name: 'test商品3',
           price: '3000',
           images: '/static/images/mens.jpg'

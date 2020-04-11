@@ -8,7 +8,6 @@ import Info from '../../../Organisms/Users/MyPage/UsersInfo'
 import Destination from '../../../Organisms/Users/MyPage/UsersDestination'
 import CreditCard from '../../../Organisms/Users/MyPage/CreditCard'
 
-
 const useStyles = makeStyles({
   root: {
     minWidth: 275

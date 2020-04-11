@@ -5,7 +5,7 @@ import P from '../../../Atoms/input/description'
 export default function ItemDescription () {
   return (
     <Wrapper>
-      <StyledP description={['ここは商品の説明一行目です','ここは商品の説明二行目です', 'ここは商品の説明三行目です', 'ここは商品の説明四行目です', 'ここは商品の説明五行目です']} />
+      <StyledP description={['ここは商品の説明一行目です', 'ここは商品の説明二行目です', 'ここは商品の説明三行目です', 'ここは商品の説明四行目です', 'ここは商品の説明五行目です']} />
     </Wrapper>
   )
 }

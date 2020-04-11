@@ -10,10 +10,10 @@
 }
 
 /* 注文内容の確認 */
-h1 {
+/* h1 {
   font-size: 30px;
   margin: 15px 0 20px 0;
-}
+} */
 
 /* 詳細設計_購入ページ_画面項目定義①〜③・⑬ */
 .your_order_confirmation,.your_order_item, .payment_section_area, .sipping_fee_area, .purchase_total_area {

@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 import TextField from '@material-ui/core/TextField'
-library.add(fab, fas, far);
 import H1 from '../../../Atoms/heading/h1'
 import ImageDetails from '../../../Molecules/ImageDetails'
 import DetailDisplay from './DetailDisplay'
@@ -16,10 +15,10 @@ import LikeBtn from '../../../Atoms/input/likeButton'
 import Button from '../../../Atoms/button/button'
 import SocialButton from '../../../Molecules/SNSButton'
 import OtherListingItem from './otherListingItem'
-
+library.add(fab, fas, far)
 
 class MainContainer extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       items: [
@@ -33,47 +32,47 @@ class MainContainer extends Component {
             '/static/images/mens.jpg',
             '/static/images/mens.jpg',
             '/static/images/mens.jpg',
-            '/static/images/mens.jpg',
+            '/static/images/mens.jpg'
           ]
         }
       ]
     }
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     console.log('アンマウント！！')
-    clearInterval(this.props);
-    clearInterval(this.state);
+    clearInterval(this.props)
+    clearInterval(this.state)
   }
 
   render () {
     return (
       <Wrapper>
         {/* ここにロゴを配置する */}
-          {/* ①商品名 */}
-          <H1 title='お買い得商品！'/>
-          <Container>
-            {/* ②商品画像 */}
-            <ImageDetails items={this.state.items[0]} />
-            {/* ③出品会社名④カテゴリー⑤商品サイズ */}
-            <DetailDisplay />
-          </Container>
-          {/* ⑥商品の値段 */}
-          <ItemPrice price={this.state.items[0].price}/>
-          {/* ⑦購入画面遷移ボタン */}
-          <Btn type='contained' color='secondary' value='購入画面に進む'/>
-          {/* ⑧商品説明 */}
-          <ItemDescription />
-          {/* ⑨いいねボタン */}
-          <Content>
-             <LikeBtn />
-          </Content>
-          {/* ⑩コメント */}
-          <TextField id='comment-input' label='コメント' fullWidth variant='outlined' />
-          {/* ⑪SNS */}
-          <SocialButton />
-          {/* ⑫出品会社のその他の商品・会社情報ページ遷移ボタン⑬その他の商品画像⑭その他の商品名⑮その他の商品額⑯その他商品のいいね */}
-          <OtherListingItem />
+        {/* ①商品名 */}
+        <H1 title='お買い得商品！' />
+        <Container>
+          {/* ②商品画像 */}
+          <ImageDetails items={this.state.items[0]} />
+          {/* ③出品会社名④カテゴリー⑤商品サイズ */}
+          <DetailDisplay />
+        </Container>
+        {/* ⑥商品の値段 */}
+        <ItemPrice price={this.state.items[0].price} />
+        {/* ⑦購入画面遷移ボタン */}
+        <Btn type='contained' color='secondary' value='購入画面に進む' />
+        {/* ⑧商品説明 */}
+        <ItemDescription />
+        {/* ⑨いいねボタン */}
+        <Content>
+          <LikeBtn />
+        </Content>
+        {/* ⑩コメント */}
+        <TextField id='comment-input' label='コメント' fullWidth variant='outlined' />
+        {/* ⑪SNS */}
+        <SocialButton />
+        {/* ⑫出品会社のその他の商品・会社情報ページ遷移ボタン⑬その他の商品画像⑭その他の商品名⑮その他の商品額⑯その他商品のいいね */}
+        <OtherListingItem />
       </Wrapper>
     )
   }

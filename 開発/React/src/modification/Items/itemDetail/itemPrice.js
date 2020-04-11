@@ -7,8 +7,8 @@ export default function ItemPrice () {
   return (
     <Container>
       <Wrapper>
-        <PriceH2 title='¥3,000'/>
-        <TaxH3 title='税込(送料込み)'/>
+        <PriceH2 title='¥3,000' />
+        <TaxH3 title='税込(送料込み)' />
       </Wrapper>
     </Container>
   )

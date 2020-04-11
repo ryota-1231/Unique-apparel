@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import './itemDetail/show.css'
 import PropTypes from 'prop-types'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-library.add(fab, fas, far);
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 import H1 from '../../Atoms/heading/h1'
 import LeftImageArea from './itemDetail/leftImageArea'
 import RightDetailArea from './itemDetail/rightDetailArea'
@@ -16,9 +15,10 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import SocialButton from './itemDetail/socialButton'
 import OtherListingItem from './itemDetail/otherListingItem'
+library.add(fab, fas, far)
 
 class ItemDetail extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       items: [
@@ -35,7 +35,7 @@ class ItemDetail extends Component {
           images: '/static/images/mens.jpg'
         },
         {
-          id:3,
+          id: 3,
           name: 'test商品3',
           price: '3000',
           images: '/static/images/mens.jpg'
@@ -50,7 +50,7 @@ class ItemDetail extends Component {
         {/* ここにロゴを配置する */}
         <div className='main-contents'>
           {/* ①商品名 */}
-          <H1 title='お買い得商品！'></H1>
+          <H1 title='お買い得商品！' />
           <section className='item-detail-container'>
             {/* ②商品画像 */}
             <LeftImageArea />
@@ -58,7 +58,7 @@ class ItemDetail extends Component {
             <RightDetailArea />
           </section>
           {/* ⑥商品の値段 */}
-          <ItemPrice/>
+          <ItemPrice />
           {/* ⑦購入画面遷移ボタン */}
           <Button variant='contained' color='secondary' className='buying-button'>購入画面に進む</Button>
           {/* ⑧商品説明 */}
@@ -81,6 +81,5 @@ ItemDetail.propTypes = {
   match: PropTypes.object,
   itemData: PropTypes.object
 }
-
 
 export default ItemDetail

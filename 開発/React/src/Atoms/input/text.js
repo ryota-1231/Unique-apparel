@@ -26,7 +26,7 @@ TextBox.propTypes = {
   label: PropTypes.array,
   className: PropTypes.string,
   size: PropTypes.string,
-  helper: PropTypes.string,
+  helper: PropTypes.string
 }
 
 const TextForm = styled.form`

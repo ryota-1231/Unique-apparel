@@ -1,33 +1,31 @@
 import React from 'react'
-import { Link as RouteLink} from "react-router-dom";
+import { Link as RouteLink } from 'react-router-dom'
 import styled from 'styled-components'
 import SignInContainer from './SignInContainer'
 import SignUpContainer from './SignUpContainer'
 
-
 class MainContainer extends React.Component {
-
-  componentWillUnmount() {
+  componentWillUnmount () {
     console.log('アンマウント！！')
-    clearInterval(this.props);
+    clearInterval(this.props)
   }
-  
+
   render () {
     return (
       <Wrapper>
         <Container>
-        {/* -------------サインアップエリア------------- */}
+          {/* -------------サインアップエリア------------- */}
           <Content>
-            <RouteLink to="/companies/signup">
-              <SignUpContainer/>
+            <RouteLink to='/companies/signup'>
+              <SignUpContainer />
             </RouteLink>
           </Content>
-        {/* -------------サインインエリア------------- */}
+          {/* -------------サインインエリア------------- */}
           <Content>
             <SignInContainer />
           </Content>
         </Container>
-        <RouteLink to="/users/login">Are you a User?</RouteLink>
+        <RouteLink to='/users/login'>Are you a User?</RouteLink>
       </Wrapper>
     )
   }
@@ -47,4 +45,4 @@ const Content = styled.div`
   width: 50%;
 `
 
-export default MainContainer;
+export default MainContainer

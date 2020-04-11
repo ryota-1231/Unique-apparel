@@ -5,11 +5,10 @@ import H1 from '../../../Atoms/heading/h1'
 import Text from '../../../Atoms/input/text'
 import SignInCheckBox from '../../../Molecules/SignInCheckBox'
 
-
 export default function SignInContainer () {
   return (
     <Wrapper>
-      <Title title="Corporation User" />
+      <Title title='Corporation User' />
       {/* -------------テキストボックス------------- */}
       <TextBox label={['Company ID']} size='small' />
       <TextBox label={['PassWord']} size='small' />

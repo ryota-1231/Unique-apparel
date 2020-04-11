@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
@@ -11,7 +11,6 @@ import H3 from '../../../Atoms/heading/h2'
 import P from '../../../Atoms/input/description'
 import CompanySignUp from './CompanySignUp'
 import ShopSignUp from './ShopSignUp'
-
 
 const useStyles = makeStyles({
   root: {
@@ -35,23 +34,23 @@ export default function MainContainer () {
 
   return (
     <Wrapper>
-      <H1 title={'出品申込情報の入力'} />
+      <H1 title='出品申込情報の入力' />
       <Container>
         <Card className={classes.root}>
           <CardContent>
-            <H3 title={'※ご確認事項※'} />
+            <H3 title='※ご確認事項※' />
             <P
               description={[
-                '・代理での出品申込は承ることができません。出店希望者ご自身でお申込みください。', 
+                '・代理での出品申込は承ることができません。出店希望者ご自身でお申込みください。',
                 '・本フォームの入力が完了した時点では、契約の成立にはなりません。'
-              ]} 
+              ]}
             />
-            </CardContent>
+          </CardContent>
         </Card>
       </Container>
       {/* -------------会社登録エリア------------- */}
       <Container>
-        <H2 title={'会社情報'} />
+        <H2 title='会社情報' />
         <Card className={classes.root}>
           <CardContent>
             <CompanySignUp />
@@ -60,7 +59,7 @@ export default function MainContainer () {
       </Container>
       {/* -------------店舗登録エリア------------- */}
       <Container>
-        <H2 title={'店舗運営責任者'} />
+        <H2 title='店舗運営責任者' />
         <Card className={classes.root}>
           <CardContent>
             <ShopSignUp />
@@ -68,8 +67,8 @@ export default function MainContainer () {
         </Card>
       </Container>
       {/* -------------登録ボタンエリア------------- */}
-      <CardActions >
-        <Btn type={'contained'} value={'会員登録する'} color={'primary'} />
+      <CardActions>
+        <Btn type='contained' value='会員登録する' color='primary' />
       </CardActions>
     </Wrapper>
   )

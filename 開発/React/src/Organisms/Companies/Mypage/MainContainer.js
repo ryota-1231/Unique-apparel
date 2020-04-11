@@ -36,4 +36,4 @@ const MypageH1 = styled(H1)`
   letter-spacing: 0.2em;
 `
 
-export default MainContainer;
+export default MainContainer
