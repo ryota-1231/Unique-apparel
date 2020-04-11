@@ -9,7 +9,7 @@ class Items extends React.Component {
 
     return (
       <div>
-         <div className='items'>
+        <div className='items'>
           {this.props.itemData.map((item) =>
             <RouteLink to={'/items/show/' + item.id} key={item.id}>
               <Item item={item} key={item.id} />
@@ -40,4 +40,4 @@ Items.propTypes = {
 Item.propTypes = {
   item: PropTypes.object
 }
-export default Items 
+export default Items
