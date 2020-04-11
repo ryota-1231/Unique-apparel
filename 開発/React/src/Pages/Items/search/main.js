@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './main.css'
 import FormPropsTextFields from './sidebar';
-import Items from '../index/items.js';
+import Items from '../index/main';
 
 class ItemSearch extends Component {
   render () {

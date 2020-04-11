@@ -11,6 +11,8 @@ import ItemIndex from '../Pages/Items/index/main'
 import ItemShow from '../Pages/Items/Detail/main'
 import Purchase from '../Pages/Items/purchase/main'
 import Complete from '../Pages/Orders/complete/main'
+import Listings from '../Pages/Items/listings/main'
+import ItemSearch from '../Pages/Items/search/main'
 import Header from '../Templates/header';
 import Footer from '../Templates/footer';
 
@@ -32,6 +34,8 @@ export default function index () {
               <li><RouteLink to="/items/show/:id">ItemShow</RouteLink></li>
               <li><RouteLink to="/items/purchase">Purchase</RouteLink></li>
               <li><RouteLink to="/items/complete">OrderComplete</RouteLink></li>
+              <li><RouteLink to="/items/listings">Listings</RouteLink></li>
+              <li><RouteLink to="/items/search">ItemSearch</RouteLink></li>
             </ul>
           </div>
           <Header />
@@ -46,6 +50,8 @@ export default function index () {
             <Route path='/items/show/:id' component={ItemShow}></Route>
             <Route path='/items/purchase' component={Purchase}></Route>
             <Route path='/items/complete' component={Complete}></Route>
+            <Route path='/items/listings' component={Listings}></Route>
+            <Route path='/items/search' component={ItemSearch}></Route>
             <Route component={TopPage}></Route>
           </Switch>
           <Footer />
