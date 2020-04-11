@@ -1,17 +1,22 @@
 import React from 'react';
+import './header-footer.css'
+import {Link as RouteLink} from "react-router-dom";
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
+import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link'
-import './header-footer.css'
+import MoreIcon from '@material-ui/icons/MoreVert';
+import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -42,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   searchIcon: {
-    width: theme.spacing(7),
+    padding: theme.spacing(0, 2),
     height: '100%',
     position: 'absolute',
     pointerEvents: 'none',
@@ -54,11 +59,13 @@ const useStyles = makeStyles(theme => ({
     color: 'inherit',
   },
   inputInput: {
-    padding: theme.spacing(1, 1, 1, 7),
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('md')]: {
-      width: 200,
+      width: '20ch',
     },
   },
   sectionDesktop: {
@@ -75,21 +82,34 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Header() {
+export default function PrimarySearchAppBar() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleProfileMenuOpen = event => {
     setAnchorEl(event.currentTarget);
   };
 
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
+  };
+
   const handleMenuClose = () => {
     setAnchorEl(null);
+    handleMobileMenuClose();
+  };
+
+  const handleMobileMenuOpen = event => {
+    setMobileMoreAnchorEl(event.currentTarget);
   };
 
   const menuId = 'primary-search-account-menu';
+
+  //ユーザーアイコン
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
@@ -100,8 +120,53 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>プロフィール</MenuItem>
+      <RouteLink to="/users/mypage">
+        <MenuItem onClick={handleMenuClose}>マイページ</MenuItem>
+      </RouteLink>
+      
       <MenuItem onClick={handleMenuClose}>ログアウト</MenuItem>
+    </Menu>
+  );
+
+  //レスポンシブ（スマホサイズの時のメニュー定義）
+  const mobileMenuId = 'primary-search-account-menu-mobile';
+  const renderMobileMenu = (
+    <Menu
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
+    >
+      <MenuItem>
+        <IconButton aria-label="show 4 new mails" color="inherit">
+          <Badge variant="dot"  color="secondary">
+            <ChatBubbleOutlineIcon />
+          </Badge>
+        </IconButton>
+        <p>おしらせ</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton aria-label="show 4 new mails" color="inherit">
+          <Badge variant="dot"  color="secondary">
+            <FavoriteBorderIcon />
+          </Badge>
+        </IconButton>
+        <p>いいね！</p>
+      </MenuItem>
+      <MenuItem onClick={handleProfileMenuOpen}>
+        <IconButton
+          aria-label="account of current user"
+          aria-controls="primary-search-account-menu"
+          aria-haspopup="true"
+          color="inherit"
+        >
+          <AccountCircle />
+        </IconButton>
+        <p>アカウント</p>
+      </MenuItem>
     </Menu>
   );
 
@@ -109,8 +174,16 @@ export default function Header() {
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="open drawer"
+          >
+            <MenuIcon />
+          </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            チームぱぱ
+            Material-UI
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -126,15 +199,17 @@ export default function Header() {
             />
           </div>
           <div className={classes.grow} />
-          {/* 将来的にはユーザーがログインしているかどうかで表示内容を分岐させる */}
-          {/* ログインしていない時 */}
-          <div>
-            <Link href='#'><Button variant="contained" color="secondary" id="sign_up_btn">新規登録</Button></Link>
-            <Link href='#'><Button variant="contained" id="login_btn">ログイン</Button></Link>
-          </div>
-          {/* ログインしている時 */}
           <div className={classes.sectionDesktop}>
-            <p className="header_user_name">ぱぱ様</p>
+            <IconButton aria-label="show 4 new mails" color="inherit">
+              <Badge variant="dot" color="secondary">
+                <ChatBubbleOutlineIcon />
+              </Badge>
+            </IconButton>
+            <IconButton aria-label="show 17 new notifications" color="inherit">
+              <Badge variant="dot" color="secondary">
+                <FavoriteBorderIcon />
+              </Badge>
+            </IconButton>
             <IconButton
               edge="end"
               aria-label="account of current user"
@@ -146,8 +221,20 @@ export default function Header() {
               <AccountCircle />
             </IconButton>
           </div>
+          <div className={classes.sectionMobile}>
+            <IconButton
+              aria-label="show more"
+              aria-controls={mobileMenuId}
+              aria-haspopup="true"
+              onClick={handleMobileMenuOpen}
+              color="inherit"
+            >
+              <MoreIcon />
+            </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
+      {renderMobileMenu}
       {renderMenu}
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from '@material-ui/core/Link'
 
 export default function Items () {
@@ -24,9 +25,13 @@ const Item = (props) => {
       <div>
         <p>{name}</p>
         <p>{color}</p>
-        <p>¥{size}</p>
+        <p>{size}</p>
       </div>
       <p>¥{price}</p>
     </div>
   )
+}
+
+Item.propTypes = {
+  item: PropTypes.object,
 }

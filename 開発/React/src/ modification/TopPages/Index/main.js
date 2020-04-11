@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import './main.css';
+import BasicTextFields from './search';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
 import Links from './category';
-
 
 
 class TopPages extends Component {
@@ -12,10 +14,15 @@ class TopPages extends Component {
   }
 
   render () {
+    
     return(
       <div className = 'container'>
       <div className = 'header'>
+        {/* サーチコンポーネントの呼び出し */}
+          <BasicTextFields/>
+          
         <div className = 'notification'>
+          <FontAwesomeIcon icon={faComment} />
         </div>
         </div>
         <div className='contents'>
