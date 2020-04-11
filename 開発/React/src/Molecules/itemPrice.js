@@ -8,8 +8,8 @@ export default function ItemPrice (props) {
   return (
     <Wrapper>
       <Container>
-        <Price title={'¥' + props.price}/>
-        <Tax title='税込(送料込み)'/>
+        <Price title={'¥' + props.price} />
+        <Tax title='税込(送料込み)' />
       </Container>
     </Wrapper>
   )

@@ -1,14 +1,12 @@
 import React from 'react'
 import MainContainer from '../../../Organisms/Companies/SignUp/MainContainer'
 
-
 class CompaniesSignUp extends React.Component {
-
-  componentWillUnmount() {
+  componentWillUnmount () {
     console.log('アンマウント！！')
-    clearInterval(this.props);
+    clearInterval(this.props)
   }
-  
+
   render () {
     return (
       <MainContainer />

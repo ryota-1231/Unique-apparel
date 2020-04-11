@@ -6,7 +6,6 @@ import RadioArea from '../../../Molecules/RadioArea'
 import Border from '../../../Atoms/border/border'
 import styled from 'styled-components'
 
-
 class ShopSignUp extends React.Component {
   render () {
     return (
@@ -20,7 +19,7 @@ class ShopSignUp extends React.Component {
         <Border />
         {/* -----------------郵送先選択----------------- */}
         <RadioArea title='郵便物等の送付先住所' label={['本社所在地と同じ', '店舗運営責任者の連絡先を入力']} />
-        <P description={['※登記簿謄本の「本店」欄の住所または住民票と異なる場合入力。']}/>
+        <P description={['※登記簿謄本の「本店」欄の住所または住民票と異なる場合入力。']} />
         <Border />
         {/* ------------------住所入力------------------ */}
         <AddressArea title='連絡先住所' />

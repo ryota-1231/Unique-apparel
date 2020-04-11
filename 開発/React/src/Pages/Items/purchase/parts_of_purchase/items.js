@@ -33,5 +33,5 @@ const Item = (props) => {
 }
 
 Item.propTypes = {
-  item: PropTypes.object,
+  item: PropTypes.object
 }

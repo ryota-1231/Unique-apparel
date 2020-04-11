@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
 
 export default function OrderInfo (props) {
   return (
@@ -9,7 +9,7 @@ export default function OrderInfo (props) {
       {/* ②商品Id */}
       <IdLinks href='#'>{props.orderId}</IdLinks>
       {/* ③取引ステータス */}
-      <Button variant="contained" color="primary">{props.status}</Button>
+      <Button variant='contained' color='primary'>{props.status}</Button>
       {/* ④出品_日時Id */}
       <p>{props.timestamp}</p>
       {/* ⑤お客様Id */}

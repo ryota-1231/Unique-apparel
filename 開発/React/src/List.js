@@ -8,15 +8,15 @@ import {
 import PropTypes from 'prop-types'
 
 const members = [
-  {id: 1, name: 'Hisashi', info: 'リードギター'},
-  {id: 2, name: 'TERU', info: 'ボーカル'},
-  {id: 3, name: 'TAKURO', info: 'ギター'},
-  {id: 4, name: 'JIRO', info: 'ベース'},
+  { id: 1, name: 'Hisashi', info: 'リードギター' },
+  { id: 2, name: 'TERU', info: 'ボーカル' },
+  { id: 3, name: 'TAKURO', info: 'ギター' },
+  { id: 4, name: 'JIRO', info: 'ベース' }
 ]
 
 const MemberListApp = () => (
   <Router>
-    <div style={{margin: 20}}>
+    <div style={{ margin: 20 }}>
       <div>
         <Switch>
           <Route path='/user/:id' component={MemberInfo} />
@@ -49,7 +49,7 @@ class MemberList extends React.Component {
 
 class MemberInfo extends React.Component {
   render () {
-    const {params} = this.props.match
+    const { params } = this.props.match
     const id = parseInt(params.id, 10)
     const member = members.filter(e => e.id === id)
     console.log(params)

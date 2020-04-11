@@ -13,7 +13,7 @@ module.exports = {
     contentBase: __dirname + '/public',
     port: 8080,
     publicPath: '/js/',
-    historyApiFallback: true 
+    historyApiFallback: true
   },
   devtool: 'eval-source-map',
   mode: 'development',

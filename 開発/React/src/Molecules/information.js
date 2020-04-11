@@ -5,14 +5,13 @@ import H3 from '../Atoms/heading/h3'
 import Button from '../Atoms/button/button'
 import Description from '../Atoms/input/description'
 
-
 export default function BtnTag (props) {
   return (
     <Wrapper>
       <Title title={props.title} />
       <Container>
         <Description description={props.description} />
-        <Btn 
+        <Btn
           value={props.value}
           type={props.type}
           color={props.color}

@@ -8,7 +8,6 @@ import Button from '../../../Atoms/button/button'
 import H1 from '../../../Atoms/heading/h1'
 import Info from '../../../Organisms/Users/SignUp/Info'
 
-
 const useStyles = makeStyles({
   root: {
     minWidth: 275
@@ -39,7 +38,7 @@ export default function MainContainer () {
           </CardContent>
         </Card>
       </Container>
-      <CardActions >
+      <CardActions>
         <Btn type='contained' value='会員登録する' color='primary' />
       </CardActions>
     </Wrapper>

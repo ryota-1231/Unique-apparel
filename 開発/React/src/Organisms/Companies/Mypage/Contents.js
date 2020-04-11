@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Pagination from '../../../Molecules/Pagination'
 import OrderStatus from '../../../Molecules/OrderStatus'
 
-
 class Contents extends React.Component {
   render () {
     return (

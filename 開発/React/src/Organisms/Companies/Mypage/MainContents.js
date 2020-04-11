@@ -7,7 +7,7 @@ class MainContents extends React.Component {
   render () {
     return (
       <Wrapper>
-        <MainContentsH3 title='出品履歴'/>
+        <MainContentsH3 title='出品履歴' />
         <Contents />
       </Wrapper>
     )
