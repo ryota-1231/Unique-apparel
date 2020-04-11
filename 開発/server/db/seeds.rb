@@ -1,7 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+(0..4).each do |i|
+  i += 1
+  @item=Item.create!(item_cord: "#{i}",
+    name: "テスト商品名#{i}",
+    category_id: 1, #暫定値
+    size_id:     1, #sizeテーブル作成したら変更
+    company_id:  1, #暫定値 companyログインできたら変更
+    color:       1, #colorテーブル作成したら変更
+    description: "テスト商品名#{i}の説明",
+    price:       "#{i}980",
+  )
+  Image.create!(item_id: @item.id,
+    image_url: open("#{Rails.root}/db/fixtures/women.png")
+  )
+end
