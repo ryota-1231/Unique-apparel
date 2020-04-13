@@ -10,6 +10,6 @@
     price:       "#{i}980",
   )
   Image.create!(item_id: @item.id,
-    image_url: open("#{Rails.root}/db/fixtures/women.png")
+    image_url: "https://growthseed.jp/wp-content/uploads/2016/12/peach-1.jpg"
   )
 end
