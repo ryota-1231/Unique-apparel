@@ -29,17 +29,6 @@ class ItemIndex extends Component {
     clearInterval(this.props);
   }
 
-  // render() {
-  //   const {items} = this.state
-  //   return (
-  //     <div className='list'>
-  //       {items.map((list) => {
-  //           return <li key={list.id}> { list.name }  ¥{ list.price }{list.image_url}</li>
-  //         })}
-  //     </div>
-  //   );
-  // }
-
   render () {
     return (
       <div className='contents'>
